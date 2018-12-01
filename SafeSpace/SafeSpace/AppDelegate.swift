@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import GoogleMaps
+import GooglePlaces
+
+
+var sweetBlue = UIColor(red:0.00, green:0.34, blue:0.60, alpha:1.0)
+let sweetGreen = UIColor(red:0.3, green:0.8, blue:0.13, alpha:1.0)
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyCJsjC1xVGvKCgEFABt6h9Acjy2JKkY-Fo")
+        GMSPlacesClient.provideAPIKey("AIzaSyCJsjC1xVGvKCgEFABt6h9Acjy2JKkY-Fo")
+
         return true
     }
 

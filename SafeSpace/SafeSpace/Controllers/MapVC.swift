@@ -10,14 +10,28 @@ import UIKit
 import Foundation
 import CoreLocation
 import MapKit
-
+import GooglePlaces
+import GoogleMaps
 
 class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
     var locationManager = CLLocationManager()
+    var trackingUserLocation = true
+    var isfirstUpdate = true
+    @IBOutlet weak var myLocationButton: UIButton!
     
+    let notificationFeedback = UINotificationFeedbackGenerator()
+    let selectionFeedback = UISelectionFeedbackGenerator()
+    var currLocation: MKUserLocation?
+    
+    var placesClient: GMSPlacesClient!
+    // An array to hold the list of likely places.
+    var likelyPlaces: [GMSPlace] = []
+    
+    // The currently selected place.
+    var selectedPlace: GMSPlace?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,6 +45,9 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
+        self.myLocationButton.isSelected = true;
+        self.trackingUserLocation = true;
+        self.placesClient = GMSPlacesClient.shared()
         
         mapView.showsUserLocation = true
         // Do any additional setup after loading the view, typically from a nib.
@@ -41,50 +58,86 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-    
-    @IBAction func locateMe(sender: UIBarButtonItem) {
-        
-        
-    }
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("here");
-        let userLocation:CLLocation = locations[0] as CLLocation
-        
-//        manager.stopUpdatingLocation()
-        
-        let coordinations = CLLocationCoordinate2D(latitude: userLocation.coordinate.latitude,longitude: userLocation.coordinate.longitude)
-        let span = MKCoordinateSpan(latitudeDelta: 0.2,longitudeDelta: 0.2)
-        let region = MKCoordinateRegion(center: coordinations, span: span)
-        
-        mapView.setRegion(region, animated: true)
-        
-        print("user latitude = \(userLocation.coordinate.latitude)")
-        print("user longitude = \(userLocation.coordinate.longitude)")
-//
-//        self.labelLat.text = "\(userLocation.coordinate.latitude)"
-//        self.labelLongi.text = "\(userLocation.coordinate.longitude)"
-        
-        let geocoder = CLGeocoder()
-        geocoder.reverseGeocodeLocation(userLocation) { (placemarks, error) in
-            if (error != nil){
-                print("error in reverseGeocode")
-            }
-            let placemark = placemarks! as [CLPlacemark]
-            if placemark.count>0{
-                let placemark = placemarks![0]
-                print(placemark.locality!)
-                print(placemark.administrativeArea!)
-                print(placemark.country!)
-                
-//                self.labelAdd.text = "\(placemark.locality!), \(placemark.administrativeArea!), \(placemark.country!)"
-            }
+    func mapView(_ mapView: MKMapView, regionDidChangeAnimated animated: Bool) {
+        if (self.mapView.userTrackingMode != .follow) {
+            print("set to not follow");
+            self.trackingUserLocation = false
+            self.myLocationButton.isSelected = false
         }
         
     }
+    
+    @IBAction func setMyLocation(_ sender: UIButton?) {
+        self.selectionFeedback.selectionChanged()
+        
+        myLocationButton.isSelected = true;
+        
+    self.mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
+//    self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
+        
+        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+        let region: MKCoordinateRegion = MKCoordinateRegion(center: currLocation!.coordinate, span: span)
+        
+        self.mapView.setRegion(region, animated: false)
+        
+        self.trackingUserLocation = true
+        if (sender != nil) {
+            sender?.isSelected = true
+            sender!.popButton()
+        }
+    }
+    
+    
+    
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        currLocation = userLocation
+        if (isfirstUpdate){
+            self.isfirstUpdate = false
+            let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+            let region: MKCoordinateRegion = MKCoordinateRegion(center: userLocation.coordinate, span: span)
+            
+            self.mapView.setRegion(region, animated: false)
+            listLikelyPlaces()
+        }
+    }
+    
+    func listLikelyPlaces() {
+        // Clean up from previous sessions.
+        likelyPlaces.removeAll()
+        print("here")
+        placesClient.currentPlace(callback: { (placeLikelihoods, error) -> Void in
+            if let error = error {
+                // TODO: Handle the error.
+                print("Current Place error: \(error.localizedDescription)")
+                return
+            }
+            
+            // Get likely places and add to the list.
+            if let likelihoodList = placeLikelihoods {
+                for likelihood in likelihoodList.likelihoods {
+                    let place = likelihood.place
+                    self.likelyPlaces.append(place)
+                    print(place)
+                }
+            }
+        })
+    }
+    
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
         print("Error \(error)")
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToSelect" {
+            if let nextViewController = segue.destination as? PlacesViewController {
+                nextViewController.likelyPlaces = likelyPlaces
+            }
+        }
     }
     
  
 }
+
+
+
 
