@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		18BABA618BA609C04D7701E7 /* Pods_SafeSpaceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1542E518B57A3648DAF9C0A5 /* Pods_SafeSpaceTests.framework */; };
+		36A6A7A421B32807006F46A9 /* ModernSearchBarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A79F21B32806006F46A9 /* ModernSearchBarModel.swift */; };
+		36A6A7A521B32807006F46A9 /* ModernSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7A021B32806006F46A9 /* ModernSearchBar.swift */; };
+		36A6A7A621B32807006F46A9 /* ModernSearchBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7A121B32806006F46A9 /* ModernSearchBarCell.swift */; };
+		36A6A7A721B32807006F46A9 /* ModernSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7A221B32807006F46A9 /* ModernSearchBarDelegate.swift */; };
+		36A6A7A821B32807006F46A9 /* ModernSearchBarIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7A321B32807006F46A9 /* ModernSearchBarIcon.swift */; };
+		36A6A7AA21B3445D006F46A9 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7A921B3445C006F46A9 /* door.png */; };
+		36A6A7AC21B344D3006F46A9 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7AB21B344D2006F46A9 /* table.png */; };
+		36A6A7AE21B34530006F46A9 /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7AD21B3452F006F46A9 /* submit.png */; };
 		36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557421B24EE500D6D75C /* AppDelegate.swift */; };
 		36E8557721B24EE500D6D75C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557621B24EE500D6D75C /* MapVC.swift */; };
 		36E8557921B24EE500D6D75C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557821B24EE500D6D75C /* ReportVC.swift */; };
@@ -42,6 +50,7 @@
 		36E855E821B3019800D6D75C /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36E855D121B2ECEB00D6D75C /* Roboto-Thin.ttf */; };
 		36E855E921B3019800D6D75C /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 36E855CB21B2ECEB00D6D75C /* Roboto-ThinItalic.ttf */; };
 		36E855ED21B307A400D6D75C /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E855EC21B307A400D6D75C /* NetworkManager.swift */; };
+		36E855EF21B311EC00D6D75C /* types.csv in Resources */ = {isa = PBXBuildFile; fileRef = 36E855EE21B311EC00D6D75C /* types.csv */; };
 		41508E4272413615B775E406 /* Pods_SafeSpaceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B5CE7C2438E0D887FE3431AD /* Pods_SafeSpaceUITests.framework */; };
 		DA9796AB1177FB01A4C422A8 /* Pods_SafeSpace.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E9BBED6122776B933E0723A /* Pods_SafeSpace.framework */; };
 /* End PBXBuildFile section */
@@ -66,6 +75,14 @@
 /* Begin PBXFileReference section */
 		1542E518B57A3648DAF9C0A5 /* Pods_SafeSpaceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeSpaceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E9BBED6122776B933E0723A /* Pods_SafeSpace.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SafeSpace.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		36A6A79F21B32806006F46A9 /* ModernSearchBarModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSearchBarModel.swift; sourceTree = "<group>"; };
+		36A6A7A021B32806006F46A9 /* ModernSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSearchBar.swift; sourceTree = "<group>"; };
+		36A6A7A121B32806006F46A9 /* ModernSearchBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSearchBarCell.swift; sourceTree = "<group>"; };
+		36A6A7A221B32807006F46A9 /* ModernSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSearchBarDelegate.swift; sourceTree = "<group>"; };
+		36A6A7A321B32807006F46A9 /* ModernSearchBarIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModernSearchBarIcon.swift; sourceTree = "<group>"; };
+		36A6A7A921B3445C006F46A9 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
+		36A6A7AB21B344D2006F46A9 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
+		36A6A7AD21B3452F006F46A9 /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
 		36E8557121B24EE500D6D75C /* SafeSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8557421B24EE500D6D75C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E8557621B24EE500D6D75C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -106,6 +123,7 @@
 		36E855D021B2ECEB00D6D75C /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
 		36E855D121B2ECEB00D6D75C /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
 		36E855EC21B307A400D6D75C /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		36E855EE21B311EC00D6D75C /* types.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = types.csv; sourceTree = "<group>"; };
 		499C07AAB833CC2FECA20C21 /* Pods-SafeSpaceUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSpaceUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeSpaceUITests/Pods-SafeSpaceUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4E35307AD336CC3455E47A59 /* Pods-SafeSpace.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSpace.release.xcconfig"; path = "Pods/Target Support Files/Pods-SafeSpace/Pods-SafeSpace.release.xcconfig"; sourceTree = "<group>"; };
 		A4518D71EB08CFFA8C8FFBE6 /* Pods-SafeSpaceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SafeSpaceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SafeSpaceTests/Pods-SafeSpaceTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +174,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		36A6A79E21B327F9006F46A9 /* ModernSearchBar */ = {
+			isa = PBXGroup;
+			children = (
+				36A6A7A021B32806006F46A9 /* ModernSearchBar.swift */,
+				36A6A7A121B32806006F46A9 /* ModernSearchBarCell.swift */,
+				36A6A7A221B32807006F46A9 /* ModernSearchBarDelegate.swift */,
+				36A6A7A321B32807006F46A9 /* ModernSearchBarIcon.swift */,
+				36A6A79F21B32806006F46A9 /* ModernSearchBarModel.swift */,
+			);
+			path = ModernSearchBar;
+			sourceTree = "<group>";
+		};
 		36E8556821B24EE500D6D75C = {
 			isa = PBXGroup;
 			children = (
@@ -181,12 +211,14 @@
 		36E8557321B24EE500D6D75C /* SafeSpace */ = {
 			isa = PBXGroup;
 			children = (
+				36A6A79E21B327F9006F46A9 /* ModernSearchBar */,
 				36E855C521B2ECDB00D6D75C /* Fonts */,
 				36E8557421B24EE500D6D75C /* AppDelegate.swift */,
 				36E855EA21B3078400D6D75C /* Modules */,
 				36E855A521B2528600D6D75C /* Controllers */,
 				36E855A421B2527F00D6D75C /* Views */,
 				36E855A621B2529000D6D75C /* Graphics */,
+				36E855F021B311F200D6D75C /* Data */,
 				36E8557D21B24EE700D6D75C /* Assets.xcassets */,
 				36E8558221B24EE700D6D75C /* Info.plist */,
 			);
@@ -276,6 +308,17 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
+		36E855F021B311F200D6D75C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				36A6A7AB21B344D2006F46A9 /* table.png */,
+				36A6A7A921B3445C006F46A9 /* door.png */,
+				36A6A7AD21B3452F006F46A9 /* submit.png */,
+				36E855EE21B311EC00D6D75C /* types.csv */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		E5E325F03BA54132DD54BF82 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,6 +340,7 @@
 				36E8556D21B24EE500D6D75C /* Sources */,
 				36E8556E21B24EE500D6D75C /* Frameworks */,
 				36E8556F21B24EE500D6D75C /* Resources */,
+				D456C8021A4857BA3F3B5C70 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -401,11 +445,14 @@
 				36E855B121B2536200D6D75C /* globe@1x.png in Resources */,
 				36E855DF21B3019800D6D75C /* Roboto-BlackItalic.ttf in Resources */,
 				36E8558121B24EE700D6D75C /* LaunchScreen.storyboard in Resources */,
+				36A6A7AE21B34530006F46A9 /* submit.png in Resources */,
+				36A6A7AC21B344D3006F46A9 /* table.png in Resources */,
 				36E855E221B3019800D6D75C /* Roboto-Italic.ttf in Resources */,
 				36E855E821B3019800D6D75C /* Roboto-Thin.ttf in Resources */,
 				36E855AB21B252C400D6D75C /* sync.png in Resources */,
 				36E855E321B3019800D6D75C /* Roboto-Light.ttf in Resources */,
 				36E855E921B3019800D6D75C /* Roboto-ThinItalic.ttf in Resources */,
+				36A6A7AA21B3445D006F46A9 /* door.png in Resources */,
 				36E855B521B2539B00D6D75C /* input@1x.png in Resources */,
 				36E855E721B3019800D6D75C /* Roboto-Regular.ttf in Resources */,
 				36E8557E21B24EE700D6D75C /* Assets.xcassets in Resources */,
@@ -417,6 +464,7 @@
 				36E855B221B2536200D6D75C /* globe@2x.png in Resources */,
 				36E8557C21B24EE500D6D75C /* Main.storyboard in Resources */,
 				36E855AA21B252C400D6D75C /* profile.png in Resources */,
+				36E855EF21B311EC00D6D75C /* types.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -491,6 +539,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		D456C8021A4857BA3F3B5C70 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-SafeSpace/Pods-SafeSpace-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SafeSpace/Pods-SafeSpace-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -500,12 +568,17 @@
 			files = (
 				36E855BE21B2733700D6D75C /* PlacesVC.swift in Sources */,
 				36E855ED21B307A400D6D75C /* NetworkManager.swift in Sources */,
+				36A6A7A521B32807006F46A9 /* ModernSearchBar.swift in Sources */,
 				36E8557921B24EE500D6D75C /* ReportVC.swift in Sources */,
+				36A6A7A421B32807006F46A9 /* ModernSearchBarModel.swift in Sources */,
 				36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */,
 				36E855BA21B2695B00D6D75C /* UIViewExtension.swift in Sources */,
+				36A6A7A721B32807006F46A9 /* ModernSearchBarDelegate.swift in Sources */,
 				36E855BC21B269CA00D6D75C /* UIImageExtension.swift in Sources */,
+				36A6A7A621B32807006F46A9 /* ModernSearchBarCell.swift in Sources */,
 				36E8557721B24EE500D6D75C /* MapVC.swift in Sources */,
 				36E855C021B2772E00D6D75C /* locationCell.swift in Sources */,
+				36A6A7A821B32807006F46A9 /* ModernSearchBarIcon.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@ target 'SafeSpace' do
   
   pod 'GoogleMaps'
   pod 'GooglePlaces'
+#  pod 'ModernSearchBar'
   # Pods for SafeSpace
 
   target 'SafeSpaceTests' do

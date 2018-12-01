@@ -13,10 +13,10 @@ import MapKit
 import GooglePlaces
 import GoogleMaps
 
-class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    
+class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate {
+    @IBOutlet weak var modernSearchBar: ModernSearchBar!
     @IBOutlet weak var mapView: MKMapView!
-    
+    var searchActive = false
     @IBOutlet weak var searchBar: UISearchBar!
     
     var locationManager = CLLocationManager()
@@ -45,7 +45,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
         UIApplication.shared.statusBarStyle = .lightContent
-        
+        self.navigationItem.title = "Search for Accessible Locations"
+
         self.mapView.mapType = .hybrid
         self.mapView.delegate = self
         self.mapView.isRotateEnabled = false
@@ -61,13 +62,52 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         
         mapView.showsUserLocation = true
         
-        searchBar.returnKeyType = .done
-        searchBar.enablesReturnKeyAutomatically = false
+//        searchBar.returnKeyType = .search
+//        searchBar.enablesReturnKeyAutomatically = false
+//        searchBar.delegate = self
+        self.configureSearchBar()
         
         
         // Do any additional setup after loading the view, typically from a nib.
     }
+    func configureSearchBar(){
+        self.modernSearchBar.delegateModernSearchBar = self as? ModernSearchBarDelegate
+        var suggestionList = Array<String>()
+        
+        for type in NetworkManager.sharedInstance.placesKeyDict.keys{
+            suggestionList.append("\(type)")
+        }
+        self.modernSearchBar.setDatas(datas: suggestionList)
+        
+    }
     
+    func onClickItemSuggestionsView(item: String) {
+        print("User touched this item: "+item)
+    }
+    
+    ///Called if you use Custom Item suggestion list
+    func onClickItemWithUrlSuggestionsView(item: ModernSearchBarModel) {
+        print("User touched this item: "+item.title+" with this url: "+item.url.description)
+    }
+    
+    ///Called when user touched shadowView
+    func onClickShadowView(shadowView: UIView) {
+        print("User touched shadowView")
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print("Text did change, what i'm suppose to do ?")
+    }
+    
+//
+//    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+//    {
+//        print("here")
+//        self.searchBar.resignFirstResponder()
+//        self.searchActive = false;
+//        self.searchBar.endEditing(true)
+//    }
+//
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -157,6 +197,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         }
     }
     
+    
+   
  
 }
 

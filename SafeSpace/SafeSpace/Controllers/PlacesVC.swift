@@ -29,6 +29,7 @@ class PlacesViewController: UITableViewController {
     UIApplication.shared.statusBarStyle = .lightContent
         
         self.navigationItem.title = "Where are you?"
+        tableView.reloadData()
         
         //        print(self.defaultSports.count)
     }
