@@ -139,6 +139,18 @@ class PlacesViewController: UITableViewController {
         table.reloadData()
         
     }
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        print("HERE")
+        let indexPath = tableView.indexPathForSelectedRow // index path of selected cell
+        
+        NetworkManager.sharedInstance.selectedPlace = likelyPlaces[indexPath!.row]
+        print("selected \(likelyPlaces[indexPath!.row])")
+        self.dismiss(animated: true, completion: nil)
+        
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "unwindToMain" {
             if let nextViewController = segue.destination as? MapVC {

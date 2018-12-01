@@ -184,7 +184,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIS
         print("Error \(error)")
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SelectLocation" {
+        if segue.identifier == "add" {
             
             if let navController = segue.destination as? UINavigationController {
                 

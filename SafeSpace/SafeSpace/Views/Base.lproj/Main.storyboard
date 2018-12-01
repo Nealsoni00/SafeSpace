@@ -92,7 +92,7 @@
                     <navigationItem key="navigationItem" id="05O-AI-qST">
                         <barButtonItem key="rightBarButtonItem" title="Add" id="Veo-2i-cm8">
                             <connections>
-                                <segue destination="3Pe-iK-muR" kind="popoverPresentation" identifier="SelectLocation" popoverAnchorBarButtonItem="Veo-2i-cm8" id="DcB-zl-rW1">
+                                <segue destination="3Pe-iK-muR" kind="popoverPresentation" identifier="add" popoverAnchorBarButtonItem="Veo-2i-cm8" id="DcB-zl-rW1">
                                     <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
                                 </segue>
                             </connections>
@@ -293,71 +293,11 @@
             </objects>
             <point key="canvasLocation" x="2377" y="-284"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="OiG-Rt-U1e">
-            <objects>
-                <viewController id="q3w-h1-xKL" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="sM3-jx-m4L">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kOk-gT-Bsb">
-                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5BW-na-v9F">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
-                                        <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Where are you?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="afc-7u-tI6">
-                                                <rect key="frame" x="22" y="27" width="120" height="21"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
-                                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="lGd-iv-Eob">
-                                                <rect key="frame" x="127" y="181" width="121" height="28"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <segments>
-                                                    <segment title="First"/>
-                                                    <segment title="Second"/>
-                                                </segments>
-                                            </segmentedControl>
-                                        </subviews>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="800" id="DvO-p7-sHZ"/>
-                                            <constraint firstAttribute="width" constant="375" id="GXJ-16-EIu"/>
-                                        </constraints>
-                                    </view>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="5BW-na-v9F" firstAttribute="top" secondItem="kOk-gT-Bsb" secondAttribute="top" id="6MZ-gf-oHC"/>
-                                    <constraint firstAttribute="bottom" secondItem="5BW-na-v9F" secondAttribute="bottom" id="XqL-gk-mF0"/>
-                                    <constraint firstAttribute="trailing" secondItem="5BW-na-v9F" secondAttribute="trailing" id="ZIw-hh-wBV"/>
-                                    <constraint firstItem="5BW-na-v9F" firstAttribute="leading" secondItem="kOk-gT-Bsb" secondAttribute="leading" id="w5d-oW-AC1"/>
-                                </constraints>
-                            </scrollView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="kOk-gT-Bsb" firstAttribute="top" secondItem="9my-Y6-RYi" secondAttribute="top" id="Ary-J7-X9J"/>
-                            <constraint firstAttribute="bottom" secondItem="kOk-gT-Bsb" secondAttribute="bottom" id="D5h-ij-Teq"/>
-                            <constraint firstItem="kOk-gT-Bsb" firstAttribute="trailing" secondItem="9my-Y6-RYi" secondAttribute="trailing" id="M6W-Yx-YrI"/>
-                            <constraint firstItem="kOk-gT-Bsb" firstAttribute="leading" secondItem="9my-Y6-RYi" secondAttribute="leading" id="W1Y-hV-R4D"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="9my-Y6-RYi"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="mo3-eb-FuA"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="6pu-GI-3x5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2377" y="1119"/>
-        </scene>
         <!--Places View Controller-->
         <scene sceneID="WXK-vR-eL5">
             <objects>
                 <tableViewController storyboardIdentifier="DefaultSportsVC" id="ZmX-ka-hfX" customClass="PlacesViewController" customModule="SafeSpace" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yX7-Ih-908">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="yX7-Ih-908">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -565,10 +505,10 @@
             </objects>
             <point key="canvasLocation" x="2377" y="419"/>
         </scene>
-        <!--Info-->
+        <!--Accessibility Report-->
         <scene sceneID="Hw3-B7-Xzm">
             <objects>
-                <tableViewController id="t40-WO-3dj" customClass="InfoVC" customModule="staplesgotclass" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="t40-WO-3dj" customClass="AccessibilityReportVC" customModule="SafeSpace" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="static" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Txo-NK-q8l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -637,6 +577,11 @@
                                                 <constraint firstItem="i4C-St-KNq" firstAttribute="centerX" secondItem="Hnr-Rz-UGT" secondAttribute="centerX" id="p6O-vf-hKc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="ZmX-ka-hfX" kind="popoverPresentation" identifier="selectLocation" popoverAnchorView="Rlr-2H-rHi" id="eVZ-hz-U81">
+                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                            </segue>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -960,13 +905,20 @@
                             <outlet property="delegate" destination="t40-WO-3dj" id="aLz-Pz-HPU"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Info" id="oFW-B0-fGk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="done" id="l6L-nk-2vU">
+                    <navigationItem key="navigationItem" title="Accessibility Report" id="oFW-B0-fGk">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="l6L-nk-2vU">
                             <connections>
                                 <action selector="donePressed:" destination="t40-WO-3dj" id="E4C-tw-0Zh"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="loadingImage" destination="i4C-St-KNq" id="DOq-qY-XZ0"/>
+                        <outlet property="locationAddress" destination="mYE-Z5-zXK" id="qVk-tW-FBp"/>
+                        <outlet property="locationImage" destination="Wcq-L4-Acr" id="KaN-UN-TkW"/>
+                        <outlet property="locationName" destination="jO5-h9-2Pp" id="MBt-WD-9f5"/>
+                        <outletCollection property="accessabilityReports" destination="LdO-P0-Z64" collectionClass="NSMutableArray" id="0SW-cV-Srp"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Dhr-3B-g8J" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -984,4 +936,7 @@
         <image name="submit.png" width="100" height="100"/>
         <image name="table.png" width="100" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="eVZ-hz-U81"/>
+    </inferredMetricsTieBreakers>
 </document>

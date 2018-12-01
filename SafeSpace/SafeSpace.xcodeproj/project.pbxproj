@@ -16,6 +16,9 @@
 		36A6A7AA21B3445D006F46A9 /* door.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7A921B3445C006F46A9 /* door.png */; };
 		36A6A7AC21B344D3006F46A9 /* table.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7AB21B344D2006F46A9 /* table.png */; };
 		36A6A7AE21B34530006F46A9 /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7AD21B3452F006F46A9 /* submit.png */; };
+		36A6A7B021B346F3006F46A9 /* AccessibilityReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7AF21B346F3006F46A9 /* AccessibilityReportVC.swift */; };
+		36A6A7B221B34C57006F46A9 /* ErrorMessage.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7B121B34C56006F46A9 /* ErrorMessage.png */; };
+		36A6A7B421B34DFC006F46A9 /* error.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7B321B34DFB006F46A9 /* error.png */; };
 		36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557421B24EE500D6D75C /* AppDelegate.swift */; };
 		36E8557721B24EE500D6D75C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557621B24EE500D6D75C /* MapVC.swift */; };
 		36E8557921B24EE500D6D75C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557821B24EE500D6D75C /* ReportVC.swift */; };
@@ -83,6 +86,9 @@
 		36A6A7A921B3445C006F46A9 /* door.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = door.png; sourceTree = "<group>"; };
 		36A6A7AB21B344D2006F46A9 /* table.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = table.png; sourceTree = "<group>"; };
 		36A6A7AD21B3452F006F46A9 /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
+		36A6A7AF21B346F3006F46A9 /* AccessibilityReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityReportVC.swift; sourceTree = "<group>"; };
+		36A6A7B121B34C56006F46A9 /* ErrorMessage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ErrorMessage.png; sourceTree = "<group>"; };
+		36A6A7B321B34DFB006F46A9 /* error.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = error.png; sourceTree = "<group>"; };
 		36E8557121B24EE500D6D75C /* SafeSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8557421B24EE500D6D75C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E8557621B24EE500D6D75C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -258,6 +264,7 @@
 			children = (
 				36E8557821B24EE500D6D75C /* ReportVC.swift */,
 				36E8557621B24EE500D6D75C /* MapVC.swift */,
+				36A6A7AF21B346F3006F46A9 /* AccessibilityReportVC.swift */,
 				36E855BD21B2733700D6D75C /* PlacesVC.swift */,
 			);
 			path = Controllers;
@@ -266,6 +273,7 @@
 		36E855A621B2529000D6D75C /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				36A6A7B121B34C56006F46A9 /* ErrorMessage.png */,
 				36E855B721B2660200D6D75C /* location.png */,
 				36E855B321B2539B00D6D75C /* input@1x.png */,
 				36E855B421B2539B00D6D75C /* input@2x.png */,
@@ -312,6 +320,7 @@
 			isa = PBXGroup;
 			children = (
 				36A6A7AB21B344D2006F46A9 /* table.png */,
+				36A6A7B321B34DFB006F46A9 /* error.png */,
 				36A6A7A921B3445C006F46A9 /* door.png */,
 				36A6A7AD21B3452F006F46A9 /* submit.png */,
 				36E855EE21B311EC00D6D75C /* types.csv */,
@@ -451,6 +460,7 @@
 				36E855E821B3019800D6D75C /* Roboto-Thin.ttf in Resources */,
 				36E855AB21B252C400D6D75C /* sync.png in Resources */,
 				36E855E321B3019800D6D75C /* Roboto-Light.ttf in Resources */,
+				36A6A7B421B34DFC006F46A9 /* error.png in Resources */,
 				36E855E921B3019800D6D75C /* Roboto-ThinItalic.ttf in Resources */,
 				36A6A7AA21B3445D006F46A9 /* door.png in Resources */,
 				36E855B521B2539B00D6D75C /* input@1x.png in Resources */,
@@ -463,6 +473,7 @@
 				36E855E421B3019800D6D75C /* Roboto-LightItalic.ttf in Resources */,
 				36E855B221B2536200D6D75C /* globe@2x.png in Resources */,
 				36E8557C21B24EE500D6D75C /* Main.storyboard in Resources */,
+				36A6A7B221B34C57006F46A9 /* ErrorMessage.png in Resources */,
 				36E855AA21B252C400D6D75C /* profile.png in Resources */,
 				36E855EF21B311EC00D6D75C /* types.csv in Resources */,
 			);
@@ -573,6 +584,7 @@
 				36A6A7A421B32807006F46A9 /* ModernSearchBarModel.swift in Sources */,
 				36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */,
 				36E855BA21B2695B00D6D75C /* UIViewExtension.swift in Sources */,
+				36A6A7B021B346F3006F46A9 /* AccessibilityReportVC.swift in Sources */,
 				36A6A7A721B32807006F46A9 /* ModernSearchBarDelegate.swift in Sources */,
 				36E855BC21B269CA00D6D75C /* UIImageExtension.swift in Sources */,
 				36A6A7A621B32807006F46A9 /* ModernSearchBarCell.swift in Sources */,
