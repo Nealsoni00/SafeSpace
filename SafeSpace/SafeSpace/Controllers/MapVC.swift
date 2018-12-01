@@ -17,6 +17,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     
+    @IBOutlet weak var searchBar: UISearchBar!
+    
     var locationManager = CLLocationManager()
     var trackingUserLocation = true
     var isfirstUpdate = true
@@ -36,6 +38,14 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        self.navigationController?.view.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = sweetBlue
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
+        UIApplication.shared.statusBarStyle = .lightContent
+        
         self.mapView.mapType = .hybrid
         self.mapView.delegate = self
         self.mapView.isRotateEnabled = false
@@ -50,6 +60,11 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         self.placesClient = GMSPlacesClient.shared()
         
         mapView.showsUserLocation = true
+        
+        searchBar.returnKeyType = .done
+        searchBar.enablesReturnKeyAutomatically = false
+        
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -72,13 +87,13 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         
         myLocationButton.isSelected = true;
         
-    self.mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
-//    self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
+        self.mapView.setCenter(self.mapView.userLocation.coordinate, animated: true)
+        self.mapView.setUserTrackingMode(MKUserTrackingMode.follow, animated: true)
         
-        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
-        let region: MKCoordinateRegion = MKCoordinateRegion(center: currLocation!.coordinate, span: span)
-        
-        self.mapView.setRegion(region, animated: false)
+//        let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
+//        let region: MKCoordinateRegion = MKCoordinateRegion(center: currLocation!.coordinate, span: span)
+//        
+//        self.mapView.setRegion(region, animated: false)
         
         self.trackingUserLocation = true
         if (sender != nil) {
@@ -92,13 +107,14 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         currLocation = userLocation
+        NetworkManager.sharedInstance.getLikelyPlaces()
         if (isfirstUpdate){
             self.isfirstUpdate = false
             let span = MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005)
             let region: MKCoordinateRegion = MKCoordinateRegion(center: userLocation.coordinate, span: span)
             
             self.mapView.setRegion(region, animated: false)
-            listLikelyPlaces()
+//            listLikelyPlaces()
         }
     }
     
@@ -128,9 +144,15 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
         print("Error \(error)")
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "segueToSelect" {
-            if let nextViewController = segue.destination as? PlacesViewController {
-                nextViewController.likelyPlaces = likelyPlaces
+        if segue.identifier == "SelectLocation" {
+            
+            if let navController = segue.destination as? UINavigationController {
+                
+                if let childVC = navController.topViewController as? PlacesViewController {
+                    childVC.likelyPlaces = likelyPlaces
+                    
+                }
+                
             }
         }
     }

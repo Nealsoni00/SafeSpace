@@ -11,7 +11,8 @@ import GoogleMaps
 import GooglePlaces
 
 
-var sweetBlue = UIColor(red:0.00, green:0.34, blue:0.60, alpha:1.0)
+var sweetBlue = UIColor(red:0.00, green:0.48, blue:1.00, alpha:1.0)
+
 let sweetGreen = UIColor(red:0.3, green:0.8, blue:0.13, alpha:1.0)
 
 @UIApplicationMain

@@ -18,14 +18,15 @@ class PlacesViewController: UITableViewController {
     var selectedPlace: GMSPlace?
     
     override func viewDidLoad() {
-        
+        self.likelyPlaces = NetworkManager.sharedInstance.likelyPlaces
+        print(likelyPlaces.count)
         super.viewDidLoad();
-        self.navigationController?.view.backgroundColor = UIColor.white
-        self.navigationController?.navigationBar.barTintColor = sweetBlue
-        self.navigationController?.navigationBar.isTranslucent = false
-        self.navigationController?.navigationBar.tintColor = UIColor.white
-        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "AppleSDGothicNeo-Bold", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
-        UIApplication.shared.statusBarStyle = .lightContent
+    self.navigationController?.view.backgroundColor = UIColor.white
+    self.navigationController?.navigationBar.barTintColor = sweetBlue
+    self.navigationController?.navigationBar.isTranslucent = false
+    self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
+    UIApplication.shared.statusBarStyle = .lightContent
         
         self.navigationItem.title = "Where are you?"
         
@@ -48,14 +49,25 @@ class PlacesViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath) as! locationCell
-        
+        cell.currPlace = likelyPlaces[indexPath.row]
+        cell.name.text = likelyPlaces[indexPath.row].name
+        cell.name.text = likelyPlaces[indexPath.row].name
+        cell.initCell()
+        print(likelyPlaces[indexPath.row].name)
         return cell
+        
     }
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.tableView.frame.size.height/4
+//        return 180
+    }
+
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         return likelyPlaces.count
     }
+    
     
     /*
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -120,12 +132,6 @@ class PlacesViewController: UITableViewController {
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
-    
- 
-    
-
-    
-  
     
     override func viewDidAppear(_ animated: Bool) {
     
