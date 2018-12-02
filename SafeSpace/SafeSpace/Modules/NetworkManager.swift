@@ -8,6 +8,8 @@
 
 import Foundation
 import GooglePlaces
+import Alamofire
+import SwiftyJSON
 
 class NetworkManager: NSObject {
     
@@ -19,14 +21,16 @@ class NetworkManager: NSObject {
     var selectedPlaceTableHights: [Float]?
     
     var placesClient: GMSPlacesClient!
-
+    
     var placesKeyDict = [String: String]()
     var placesDict = [String: String]()
     
-    
+    var basename: String
     
     private override init() {
+        self.basename = "http://localhost:3000/"
         super.init()
+        
         self.placesClient = GMSPlacesClient.shared()
         self.getLikelyPlaces()
         self.getSearchData()
@@ -51,12 +55,13 @@ class NetworkManager: NSObject {
                 for likelihood in likelihoodList.likelihoods {
                     let place = likelihood.place
                     likelyPlacesTemp.append(place)
-//                    print(place)
+                    //                    print(place)
                 }
             }
             self.likelyPlaces = likelyPlacesTemp
         })
     }
+    
     func getSearchData(){
         let fileURLProject = Bundle.main.path(forResource: "types", ofType: "csv")
         // Read from the file
@@ -80,7 +85,151 @@ class NetworkManager: NSObject {
         }
     }
     
+    func getLocation(googlePlaceID: String, completion: (([String: Any]) -> Void)?) {
+        let postParams = ["google_place_id": googlePlaceID]
+        
+        Alamofire.request(self.basename + "location/get",
+                          method: .post,
+                          parameters: postParams,
+                          headers: nil)
+            .responseJSON { response in
+                if (response.response?.statusCode == 200) {
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                        do {
+                            // Get json data
+                            let json = try JSON(data: data)
+                            
+                            let returnVal = ["location": json[0]["location"], "information": json[0]["information"]]
+                            
+                            completion?(returnVal)
+                        } catch{
+                            print("Unexpected error: \(error).")
+                        }
+                    }
+                } else {
+                    // Server error
+                    print("SERVER ERROR GETTING LOCATION WITH GID: \(googlePlaceID)")
+                }
+        }
+    }
     
+    func addLocation(locationParams: [String: Any], completion: (([String: Any]) -> Void)?) {
+        let postParams = ["location": locationParams]
+        
+        Alamofire.request(self.basename + "location/add_location",
+                          method: .post,
+                          parameters: postParams,
+                          headers: nil)
+            .responseJSON { response in
+                if (response.response?.statusCode == 200) {
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                        do {
+                            // Get json data
+                            let json = try JSON(data: data)
+                            
+                            let returnVal = ["location": json]
+                            
+                            completion?(returnVal)
+                        } catch{
+                            print("Unexpected error: \(error).")
+                        }
+                    } else {
+                        // Server error
+                        print("SERVER ERROR ADDING LOCATION")
+                    }
+                }
+        }
+    }
     
-
+    func updateLocation(locationID: Int, locationParams: [String: Any], completion: (([String: Any]) -> Void)?) {
+        var postParams = ["location": locationParams]
+        postParams["location"]!["id"] = locationID
+        
+        Alamofire.request(self.basename + "location/update_location",
+                          method: .post,
+                          parameters: postParams,
+                          headers: nil)
+            .responseJSON { response in
+                if (response.response?.statusCode == 200) {
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                        do {
+                            // Get json data
+                            let json = try JSON(data: data)
+                            
+                            let returnVal = ["location": json]
+                            
+                            completion?(returnVal)
+                        } catch{
+                            print("Unexpected error: \(error).")
+                        }
+                    } else {
+                        // Server error
+                        print("SERVER ERROR UPDATING LOCATION")
+                    }
+                }
+        }
+    }
+    
+    func addInformation(informationParams: [String: Any], completion: (([String: Any]) -> Void)?) {
+        let postParams = ["accessibility_information": informationParams]
+        
+        Alamofire.request(self.basename + "location/add_information",
+                          method: .post,
+                          parameters: postParams,
+                          headers: nil)
+            .responseJSON { response in
+                if (response.response?.statusCode == 200) {
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                        do {
+                            // Get json data
+                            let json = try JSON(data: data)
+                            
+                            let returnVal = ["information": json]
+                            
+                            completion?(returnVal)
+                        } catch{
+                            print("Unexpected error: \(error).")
+                        }
+                    } else {
+                        // Server error
+                        print("SERVER ERROR ADDING INFORMATION")
+                    }
+                }
+        }
+    }
+    
+    func updateInformation(informationID: Int, informationParams: [String: Any], completion: (([String: Any]) -> Void)?) {
+        var postParams = ["accessibility_information": informationParams]
+        postParams["accessibility_information"]!["id"] = informationID
+        
+        Alamofire.request(self.basename + "location/update_information",
+                          method: .post,
+                          parameters: postParams,
+                          headers: nil)
+            .responseJSON { response in
+                if (response.response?.statusCode == 200) {
+                    if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                        print("Data: \(utf8Text)") // original server data as UTF8 string
+                        do {
+                            // Get json data
+                            let json = try JSON(data: data)
+                            
+                            let returnVal = ["information": json]
+                            
+                            completion?(returnVal)
+                        } catch{
+                            print("Unexpected error: \(error).")
+                        }
+                    } else {
+                        // Server error
+                        print("SERVER ERROR UPDATING LOCATION")
+                    }
+                }
+        }
+    }
 }
+

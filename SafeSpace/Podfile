@@ -11,6 +11,10 @@ target 'SafeSpace' do
 #  pod 'ModernSearchBar'
   # Pods for SafeSpace
 
+  pod 'Alamofire'
+  #pod 'Alamofire-SwiftyJSON'
+  pod 'SwiftyJSON'
+
   target 'SafeSpaceTests' do
     inherit! :search_paths
     # Pods for testing
