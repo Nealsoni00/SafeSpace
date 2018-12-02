@@ -225,8 +225,9 @@ extension MapVC: GMSAutocompleteResultsViewControllerDelegate {
             for (key, object) in json {
                 data[key] = object.stringValue
             }
-            
+            print(data)
             var info = data["information"]! as! String
+            print("info",info)
             info.remove(at: info.startIndex)
             info.remove(at: info.endIndex);
             
@@ -237,34 +238,7 @@ extension MapVC: GMSAutocompleteResultsViewControllerDelegate {
             print("response ", response)
             let data2 = self.convertToDictionary(text: response)
             NetworkManager.sharedInstance.selectedPlaceInformation = data2 ?? [String: Any]()
-            
             print(data2)
-//            print("INFO DATA: \(data["information"]!)")
-            
-            /*if let info = json["information"] {
-                print("INFO: \(info)")
-                
-                if let infoArr = info as? [Any] {
-                    print("INFOARR: \(infoArr)")
-                } else {
-                    print("NO INFO ARR")
-                }
-            }*/
-            
-            //for obj in json["information"] {
-            //    print("OBJ: \(obj)")
-            //}
-            
-            /*if let information = json["information"].arrayValue {
-                print("INFORMATION: \(information)")
-                
-                if let infoDict = information[0] as? [String: Any] {
-                    print("INFO: \(infoDict["id"])")
-                }
-            } else {
-                print("INFO IS NULL")
-            }*/
-            
         }
         let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "viewReport") as! UINavigationController
         self.present(vc1, animated:true, completion: nil)

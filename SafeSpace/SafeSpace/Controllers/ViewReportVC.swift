@@ -78,6 +78,7 @@ class ViewReportVC: UITableViewController {
             DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
                 self.populate()
             })
+            print("the table is empty!!!")
         }else{
             informationCell.isHidden = false
             measurmentsCell.isHidden = false

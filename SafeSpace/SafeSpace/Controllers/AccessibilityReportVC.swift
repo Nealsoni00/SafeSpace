@@ -170,29 +170,37 @@ class AccessibilityReportVC: UITableViewController {
         let locationParams = ["location_type_name":selectedPlace!.types, "name":name, "address":address, "city":city, "state":state,  "lat":selectedPlace!.coordinate.latitude, "long":selectedPlace!.coordinate.longitude, "google_place_id":selectedPlace!.placeID] as [String : Any]
         NetworkManager.sharedInstance.addLocation(locationParams: locationParams) { json in
             print("ADD LOCATION RESPONSE: \(json)")
+            var sum: Float = 0.0
+            for accessible in self.accessabilityReports{
+                if self.accessabilityReports[0].selectedSegmentIndex == 1 {
+                    sum += 1.0
+                }
+            }
+            var score: Float = sum/8
+            let accessible = self.swapData(data: Int(self.accessabilityReports[0].selectedSegmentIndex))
+            let ramps = self.swapData(data: Int(self.accessabilityReports[1].selectedSegmentIndex))
+            let lifts = self.swapData(data: Int(self.accessabilityReports[2].selectedSegmentIndex))
+            let surfaces = self.swapData(data: Int(self.accessabilityReports[3].selectedSegmentIndex))
+            let parking = self.swapData(data: Int(self.accessabilityReports[4].selectedSegmentIndex))
+            let bathrooms = self.swapData(data: Int(self.accessabilityReports[5].selectedSegmentIndex))
+            let signs = self.swapData(data: Int(self.accessabilityReports[6].selectedSegmentIndex))
+            let loud = self.swapData(data: Int(self.accessabilityReports[7].selectedSegmentIndex))
+            print(accessible,ramps,lifts,surfaces,parking)
+            print("here 3")
+            print(self.selectedPlace!.placeID)
+            let informationParams = ["google_place_id":self.selectedPlace!.placeID,"gen_accessible":accessible, "ramps":ramps,"smooth":surfaces,"parking":parking,"bathrooms":bathrooms,"sight_impaired":signs,"elevators":lifts, "sound":loud,"door_widths":self.doorWidths,"table_heights":self.tableHeights!, "score":score] as [String : Any]
+            
+            NetworkManager.sharedInstance.addInformation(informationParams: informationParams) { json in
+                print("ADD INFO RESPONSE: \(json)")
+            }
         }
          print("here 2")
-        
-        let accessible = swapData(data: Int(accessabilityReports[0].selectedSegmentIndex))
-        let ramps = swapData(data: Int(accessabilityReports[1].selectedSegmentIndex))
-        let lifts = swapData(data: Int(accessabilityReports[2].selectedSegmentIndex))
-        let surfaces = swapData(data: Int(accessabilityReports[3].selectedSegmentIndex))
-        let parking = swapData(data: Int(accessabilityReports[4].selectedSegmentIndex))
-        let bathrooms = swapData(data: Int(accessabilityReports[5].selectedSegmentIndex))
-        let signs = swapData(data: Int(accessabilityReports[6].selectedSegmentIndex))
-        let loud = swapData(data: Int(accessabilityReports[7].selectedSegmentIndex))
-        print(accessible,ramps,lifts,surfaces,parking)
-        print("here 3")
-        print(selectedPlace!.placeID)
-        let informationParams = ["google_place_id":selectedPlace!.placeID,"gen_accessible":accessible, "ramps":ramps,"smooth":surfaces,"parking":parking,"bathrooms":bathrooms,"sight-impaired":signs,"elivators":lifts, "sound":loud,"door_widths":doorWidths,"table_heights":tableHeights!, "score":0.7777] as [String : Any]
-        
-        NetworkManager.sharedInstance.addInformation(informationParams: informationParams) { json in
-            print("ADD INFO RESPONSE: \(json)")
-        }
+      
         let popup = PopupDialog(title: "Thank you!", message: "We have successfully recorded your report! Thank you for helping Safe Space")
         
         popup.transitionStyle = .fadeIn
         let buttonOne = DefaultButton(title: "Dismiss") {
+            self.performSegue(withIdentifier: "goHome", sender: self)
         }
         
         popup.addButton(buttonOne)
