@@ -57,6 +57,8 @@
 	<string>To determine location of safe spaces</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>To determine location of safe spaces </string>
+	<key>NSCameraUsageDescription</key>
+	<string>To measure the length of doors and height of tables</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Medium.ttf</string>

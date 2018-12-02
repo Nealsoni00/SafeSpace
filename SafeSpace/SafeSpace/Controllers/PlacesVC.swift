@@ -145,6 +145,9 @@ class PlacesViewController: UITableViewController {
         let indexPath = tableView.indexPathForSelectedRow // index path of selected cell
         
         NetworkManager.sharedInstance.selectedPlace = likelyPlaces[indexPath!.row]
+        NetworkManager.sharedInstance.selectedPlaceDoorWidths = [Float]()
+        NetworkManager.sharedInstance.selectedPlaceTableHights = [Float]()
+    
         print("selected \(likelyPlaces[indexPath!.row])")
         self.dismiss(animated: true, completion: nil)
         

@@ -12,6 +12,8 @@ import GooglePlaces
 class AccessibilityReportVC: UITableViewController {
 
     var selectedPlace: GMSPlace?
+    var doorWidths: [Float]?
+    var tableHeights: [Float]?
     
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var locationName: UILabel!
@@ -92,6 +94,68 @@ class AccessibilityReportVC: UITableViewController {
             }
         })
     }
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        print("HERE")
+        let indexPath = tableView.indexPathForSelectedRow // index path of selected cell
+        
+        
+        if indexPath!.section == 2 {
+            switch indexPath!.row {
+            case 0:
+                
+                print("need to measure doors")
+            case 1:
+                print("need to measure tables")
+                
+            default:
+                break
+            }
+        }else if indexPath!.section == 3 {
+            switch indexPath!.row {
+            case 0:
+                self.submitform()
+            default:
+                break
+            }
+        }
+        
+        
+    }
+    func submitform(){
+        print(accessabilityReports[0].selectedSegmentIndex == 0 ? "True" : "False")
+        
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "selectLocation" {
+            if let nextViewController = segue.destination as? MapVC {
+                nextViewController.selectedPlace = selectedPlace
+            }
+        }else if segue.identifier == "table" {
+            if let navController = segue.destination as? UINavigationController {
+                print("here TABLE PLEASE PLEASE PLEASE!")
+                if let childVC = navController.topViewController as? MeasurementsVC {
+                    print("table")
+                    childVC.type = "table"
+                    
+                }
+                
+            }
+            
+            
+        }else if segue.identifier == "doorMeasurments" {
+            if let navController = segue.destination as? UINavigationController {
+                print("here!")
+                if let childVC = navController.topViewController as? MeasurementsVC {
+                    childVC.type = "door"
+                    
+                }
+                
+            }
+            
+        }
+     
+    }
     
 
     // MARK: - Table view data source
@@ -161,12 +225,6 @@ class AccessibilityReportVC: UITableViewController {
     }
     */
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "selectLocation" {
-            if let nextViewController = segue.destination as? MapVC {
-                nextViewController.selectedPlace = selectedPlace
-            }
-        }
-    }
+ 
 
 }

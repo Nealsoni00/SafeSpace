@@ -15,10 +15,15 @@ class NetworkManager: NSObject {
     
     var likelyPlaces: [GMSPlace] = []
     var selectedPlace: GMSPlace?
+    var selectedPlaceDoorWidths: [Float]?
+    var selectedPlaceTableHights: [Float]?
+    
     var placesClient: GMSPlacesClient!
 
     var placesKeyDict = [String: String]()
     var placesDict = [String: String]()
+    
+    
     
     private override init() {
         super.init()
@@ -44,7 +49,7 @@ class NetworkManager: NSObject {
                 for likelihood in likelihoodList.likelihoods {
                     let place = likelihood.place
                     likelyPlacesTemp.append(place)
-                    print(place)
+//                    print(place)
                 }
             }
             self.likelyPlaces = likelyPlacesTemp
