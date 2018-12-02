@@ -35,7 +35,8 @@ class MeasureVC: UIViewController, ARSCNViewDelegate {
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
         UIApplication.shared.statusBarStyle = .lightContent
-        
+        self.navigationItem.title = "Measure a \(self.type!.capitalized)"
+
         // Creates a background for the label
         measurementLabel.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: 100)
         

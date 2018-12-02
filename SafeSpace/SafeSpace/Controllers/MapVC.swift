@@ -213,6 +213,11 @@ extension MapVC: GMSAutocompleteResultsViewControllerDelegate {
         print("Place ID: \(place.placeID)")
         print("Place Type: \(place.types[0])")
         print("Place address: \(place.formattedAddress!)")
+        NetworkManager.sharedInstance.selectedPlace = place
+        
+        let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "viewReport") as! UINavigationController
+        self.present(vc1, animated:true, completion: nil)
+        
     }
     
     func resultsController(_ resultsController: GMSAutocompleteResultsViewController,

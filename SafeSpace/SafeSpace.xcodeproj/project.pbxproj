@@ -27,6 +27,310 @@
 		36A6A7C021B39802006F46A9 /* measure.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7BF21B39800006F46A9 /* measure.png */; };
 		36A6A7C221B3A057006F46A9 /* sound.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6A7C121B3A056006F46A9 /* sound.png */; };
 		36A6A7C421B3A115006F46A9 /* SoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7C321B3A115006F46A9 /* SoundVC.swift */; };
+		36A6A7C621B3C293006F46A9 /* ViewReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36A6A7C521B3C293006F46A9 /* ViewReportVC.swift */; };
+		36A6AC0B21B3CCA8006F46A9 /* sunroofControl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA621B3C6E3006F46A9 /* sunroofControl1.png */; };
+		36A6AC0C21B3CCA8006F46A9 /* sunroofControl17.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA721B3C6E3006F46A9 /* sunroofControl17.png */; };
+		36A6AC0D21B3CCA8006F46A9 /* sunroofControl16.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA821B3C6E3006F46A9 /* sunroofControl16.png */; };
+		36A6AC0E21B3CCA8006F46A9 /* sunroofControl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA921B3C6E3006F46A9 /* sunroofControl0.png */; };
+		36A6AC0F21B3CCA8006F46A9 /* sunroofControl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAA21B3C6E3006F46A9 /* sunroofControl2.png */; };
+		36A6AC1021B3CCA8006F46A9 /* sunroofControl28.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAB21B3C6E3006F46A9 /* sunroofControl28.png */; };
+		36A6AC1121B3CCA8006F46A9 /* sunroofControl14.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAC21B3C6E3006F46A9 /* sunroofControl14.png */; };
+		36A6AC1221B3CCA8006F46A9 /* sunroofControl15.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAD21B3C6E3006F46A9 /* sunroofControl15.png */; };
+		36A6AC1321B3CCA8006F46A9 /* sunroofControl29.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAE21B3C6E3006F46A9 /* sunroofControl29.png */; };
+		36A6AC1421B3CCA8006F46A9 /* sunroofControl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAF21B3C6E3006F46A9 /* sunroofControl3.png */; };
+		36A6AC1521B3CCA8006F46A9 /* sunroofControl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB021B3C6E3006F46A9 /* sunroofControl7.png */; };
+		36A6AC1621B3CCA8006F46A9 /* sunroofControl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB121B3C6E3006F46A9 /* sunroofControl11.png */; };
+		36A6AC1721B3CCA8006F46A9 /* sunroofControl39.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB221B3C6E3006F46A9 /* sunroofControl39.png */; };
+		36A6AC1821B3CCA8006F46A9 /* sunroofControl38.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB321B3C6E3006F46A9 /* sunroofControl38.png */; };
+		36A6AC1921B3CCA8006F46A9 /* sunroofControl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB421B3C6E3006F46A9 /* sunroofControl10.png */; };
+		36A6AC1A21B3CCA8006F46A9 /* sunroofControl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB521B3C6E3006F46A9 /* sunroofControl6.png */; };
+		36A6AC1B21B3CCA8006F46A9 /* sunroofControl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB621B3C6E3006F46A9 /* sunroofControl4.png */; };
+		36A6AC1C21B3CCA8006F46A9 /* sunroofControl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB721B3C6E3006F46A9 /* sunroofControl12.png */; };
+		36A6AC1D21B3CCA8006F46A9 /* sunroofControl13.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB821B3C6E3006F46A9 /* sunroofControl13.png */; };
+		36A6AC1E21B3CCA8006F46A9 /* sunroofControl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB921B3C6E3006F46A9 /* sunroofControl5.png */; };
+		36A6AC1F21B3CCA8006F46A9 /* sunroofControl100.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBA21B3C6E3006F46A9 /* sunroofControl100.png */; };
+		36A6AC2021B3CCA8006F46A9 /* sunroofControl48.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBB21B3C6E3006F46A9 /* sunroofControl48.png */; };
+		36A6AC2121B3CCA8006F46A9 /* sunroofControl60.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBC21B3C6E3006F46A9 /* sunroofControl60.png */; };
+		36A6AC2221B3CCA8006F46A9 /* sunroofControl74.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBD21B3C6E3006F46A9 /* sunroofControl74.png */; };
+		36A6AC2321B3CCA8006F46A9 /* sunroofControl75.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBE21B3C6E3006F46A9 /* sunroofControl75.png */; };
+		36A6AC2421B3CCA8006F46A9 /* sunroofControl61.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBF21B3C6E3006F46A9 /* sunroofControl61.png */; };
+		36A6AC2521B3CCA8006F46A9 /* sunroofControl49.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC021B3C6E3006F46A9 /* sunroofControl49.png */; };
+		36A6AC2621B3CCA8006F46A9 /* sunroofControl77.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC121B3C6E3006F46A9 /* sunroofControl77.png */; };
+		36A6AC2721B3CCA8006F46A9 /* sunroofControl63.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC221B3C6E3006F46A9 /* sunroofControl63.png */; };
+		36A6AC2821B3CCA8006F46A9 /* sunroofControl88.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC321B3C6E3006F46A9 /* sunroofControl88.png */; };
+		36A6AC2921B3CCA8006F46A9 /* sunroofControl89.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC421B3C6E3006F46A9 /* sunroofControl89.png */; };
+		36A6AC2A21B3CCA8006F46A9 /* sunroofControl62.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC521B3C6E3006F46A9 /* sunroofControl62.png */; };
+		36A6AC2B21B3CCA8006F46A9 /* sunroofControl76.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC621B3C6E3006F46A9 /* sunroofControl76.png */; };
+		36A6AC2C21B3CCA8006F46A9 /* sunroofControl72.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC721B3C6E3006F46A9 /* sunroofControl72.png */; };
+		36A6AC2D21B3CCA8006F46A9 /* sunroofControl66.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC821B3C6E3006F46A9 /* sunroofControl66.png */; };
+		36A6AC2E21B3CCA8006F46A9 /* sunroofControl99.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC921B3C6E3006F46A9 /* sunroofControl99.png */; };
+		36A6AC2F21B3CCA8006F46A9 /* sunroofControl98.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCA21B3C6E3006F46A9 /* sunroofControl98.png */; };
+		36A6AC3021B3CCA8006F46A9 /* sunroofControl67.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCB21B3C6E3006F46A9 /* sunroofControl67.png */; };
+		36A6AC3121B3CCA8006F46A9 /* sunroofControl73.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCC21B3C6E3006F46A9 /* sunroofControl73.png */; };
+		36A6AC3221B3CCA8006F46A9 /* sunroofControl65.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCD21B3C6E3006F46A9 /* sunroofControl65.png */; };
+		36A6AC3321B3CCA8006F46A9 /* sunroofControl71.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCE21B3C6E3006F46A9 /* sunroofControl71.png */; };
+		36A6AC3421B3CCA8006F46A9 /* sunroofControl59.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCF21B3C6E3006F46A9 /* sunroofControl59.png */; };
+		36A6AC3521B3CCA8006F46A9 /* sunroofControl58.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD021B3C6E3006F46A9 /* sunroofControl58.png */; };
+		36A6AC3621B3CCA8006F46A9 /* sunroofControl70.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD121B3C6E3006F46A9 /* sunroofControl70.png */; };
+		36A6AC3721B3CCA8006F46A9 /* sunroofControl64.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD221B3C6E3006F46A9 /* sunroofControl64.png */; };
+		36A6AC3821B3CCA8006F46A9 /* sunroofControl69.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD321B3C6E3006F46A9 /* sunroofControl69.png */; };
+		36A6AC3921B3CCA8006F46A9 /* sunroofControl41.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD421B3C6E3006F46A9 /* sunroofControl41.png */; };
+		36A6AC3A21B3CCA8006F46A9 /* sunroofControl55.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD521B3C6E3006F46A9 /* sunroofControl55.png */; };
+		36A6AC3B21B3CCA8006F46A9 /* sunroofControl82.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD621B3C6E3006F46A9 /* sunroofControl82.png */; };
+		36A6AC3C21B3CCA8006F46A9 /* sunroofControl96.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD721B3C6E3006F46A9 /* sunroofControl96.png */; };
+		36A6AC3D21B3CCA8006F46A9 /* sunroofControl97.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD821B3C6E3006F46A9 /* sunroofControl97.png */; };
+		36A6AC3E21B3CCA8006F46A9 /* sunroofControl83.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD921B3C6E3006F46A9 /* sunroofControl83.png */; };
+		36A6AC3F21B3CCA8006F46A9 /* sunroofControl54.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDA21B3C6E3006F46A9 /* sunroofControl54.png */; };
+		36A6AC4021B3CCA8006F46A9 /* sunroofControl40.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDB21B3C6E3006F46A9 /* sunroofControl40.png */; };
+		36A6AC4121B3CCA8006F46A9 /* sunroofControl68.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDC21B3C6E3006F46A9 /* sunroofControl68.png */; };
+		36A6AC4221B3CCA8006F46A9 /* sunroofControl56.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDD21B3C6E3006F46A9 /* sunroofControl56.png */; };
+		36A6AC4321B3CCA8006F46A9 /* sunroofControl42.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDE21B3C6E3006F46A9 /* sunroofControl42.png */; };
+		36A6AC4421B3CCA8006F46A9 /* sunroofControl95.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDF21B3C6E3006F46A9 /* sunroofControl95.png */; };
+		36A6AC4521B3CCA8006F46A9 /* sunroofControl81.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE021B3C6E3006F46A9 /* sunroofControl81.png */; };
+		36A6AC4621B3CCA8006F46A9 /* sunroofControl80.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE121B3C6E3006F46A9 /* sunroofControl80.png */; };
+		36A6AC4721B3CCA8006F46A9 /* sunroofControl94.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE221B3C6E3006F46A9 /* sunroofControl94.png */; };
+		36A6AC4821B3CCA8006F46A9 /* sunroofControl43.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE321B3C6E3006F46A9 /* sunroofControl43.png */; };
+		36A6AC4921B3CCA8006F46A9 /* sunroofControl57.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE421B3C6E3006F46A9 /* sunroofControl57.png */; };
+		36A6AC4A21B3CCA8006F46A9 /* sunroofControl53.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE521B3C6E3006F46A9 /* sunroofControl53.png */; };
+		36A6AC4B21B3CCA8006F46A9 /* sunroofControl47.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE621B3C6E3006F46A9 /* sunroofControl47.png */; };
+		36A6AC4C21B3CCA8006F46A9 /* sunroofControl90.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE721B3C6E3006F46A9 /* sunroofControl90.png */; };
+		36A6AC4D21B3CCA8006F46A9 /* sunroofControl84.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE821B3C6E3006F46A9 /* sunroofControl84.png */; };
+		36A6AC4E21B3CCA8006F46A9 /* sunroofControl85.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE921B3C6E3006F46A9 /* sunroofControl85.png */; };
+		36A6AC4F21B3CCA8006F46A9 /* sunroofControl91.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEA21B3C6E3006F46A9 /* sunroofControl91.png */; };
+		36A6AC5021B3CCA8006F46A9 /* sunroofControl46.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEB21B3C6E3006F46A9 /* sunroofControl46.png */; };
+		36A6AC5121B3CCA8006F46A9 /* sunroofControl52.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEC21B3C6E3006F46A9 /* sunroofControl52.png */; };
+		36A6AC5221B3CCA8006F46A9 /* sunroofControl44.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABED21B3C6E3006F46A9 /* sunroofControl44.png */; };
+		36A6AC5321B3CCA8006F46A9 /* sunroofControl50.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEE21B3C6E3006F46A9 /* sunroofControl50.png */; };
+		36A6AC5421B3CCA8006F46A9 /* sunroofControl78.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEF21B3C6E3006F46A9 /* sunroofControl78.png */; };
+		36A6AC5521B3CCA8006F46A9 /* sunroofControl87.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF021B3C6E3006F46A9 /* sunroofControl87.png */; };
+		36A6AC5621B3CCA8006F46A9 /* sunroofControl93.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF121B3C6E3006F46A9 /* sunroofControl93.png */; };
+		36A6AC5721B3CCA8006F46A9 /* sunroofControl92.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF221B3C6E3006F46A9 /* sunroofControl92.png */; };
+		36A6AC5821B3CCA8006F46A9 /* sunroofControl86.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF321B3C6E3006F46A9 /* sunroofControl86.png */; };
+		36A6AC5921B3CCA8006F46A9 /* sunroofControl79.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF421B3C6E3006F46A9 /* sunroofControl79.png */; };
+		36A6AC5A21B3CCA8006F46A9 /* sunroofControl51.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF521B3C6E3006F46A9 /* sunroofControl51.png */; };
+		36A6AC5B21B3CCA8006F46A9 /* sunroofControl45.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF621B3C6E3006F46A9 /* sunroofControl45.png */; };
+		36A6AC5C21B3CCA8006F46A9 /* sunroofControl8.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF721B3C6E3006F46A9 /* sunroofControl8.png */; };
+		36A6AC5D21B3CCA8006F46A9 /* sunroofControl22.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF821B3C6E3006F46A9 /* sunroofControl22.png */; };
+		36A6AC5E21B3CCA8006F46A9 /* sunroofControl36.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF921B3C6E3006F46A9 /* sunroofControl36.png */; };
+		36A6AC5F21B3CCA8006F46A9 /* sunroofControl37.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFA21B3C6E3006F46A9 /* sunroofControl37.png */; };
+		36A6AC6021B3CCA8006F46A9 /* sunroofControl23.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFB21B3C6E3006F46A9 /* sunroofControl23.png */; };
+		36A6AC6121B3CCA8006F46A9 /* sunroofControl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFC21B3C6E3006F46A9 /* sunroofControl9.png */; };
+		36A6AC6221B3CCA8006F46A9 /* sunroofControl35.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFD21B3C6E3006F46A9 /* sunroofControl35.png */; };
+		36A6AC6321B3CCA8006F46A9 /* sunroofControl21.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFE21B3C6E4006F46A9 /* sunroofControl21.png */; };
+		36A6AC6421B3CCA8006F46A9 /* sunroofControl20.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFF21B3C6E4006F46A9 /* sunroofControl20.png */; };
+		36A6AC6521B3CCA8006F46A9 /* sunroofControl34.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0021B3C6E4006F46A9 /* sunroofControl34.png */; };
+		36A6AC6621B3CCA8006F46A9 /* sunroofControl30.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0121B3C6E4006F46A9 /* sunroofControl30.png */; };
+		36A6AC6721B3CCA8006F46A9 /* sunroofControl24.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0221B3C6E4006F46A9 /* sunroofControl24.png */; };
+		36A6AC6821B3CCA8006F46A9 /* sunroofControl18.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0321B3C6E4006F46A9 /* sunroofControl18.png */; };
+		36A6AC6921B3CCA8006F46A9 /* sunroofControl19.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0421B3C6E4006F46A9 /* sunroofControl19.png */; };
+		36A6AC6A21B3CCA8006F46A9 /* sunroofControl25.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0521B3C6E4006F46A9 /* sunroofControl25.png */; };
+		36A6AC6B21B3CCA8006F46A9 /* sunroofControl31.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0621B3C6E4006F46A9 /* sunroofControl31.png */; };
+		36A6AC6C21B3CCA8006F46A9 /* sunroofControl27.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0721B3C6E4006F46A9 /* sunroofControl27.png */; };
+		36A6AC6D21B3CCA8006F46A9 /* sunroofControl33.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0821B3C6E4006F46A9 /* sunroofControl33.png */; };
+		36A6AC6E21B3CCA8006F46A9 /* sunroofControl32.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0921B3C6E4006F46A9 /* sunroofControl32.png */; };
+		36A6AC6F21B3CCA8006F46A9 /* sunroofControl26.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0A21B3C6E4006F46A9 /* sunroofControl26.png */; };
+		36A6AC7021B3CCAB006F46A9 /* sunroofControl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA621B3C6E3006F46A9 /* sunroofControl1.png */; };
+		36A6AC7121B3CCAB006F46A9 /* sunroofControl17.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA721B3C6E3006F46A9 /* sunroofControl17.png */; };
+		36A6AC7221B3CCAB006F46A9 /* sunroofControl16.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA821B3C6E3006F46A9 /* sunroofControl16.png */; };
+		36A6AC7321B3CCAB006F46A9 /* sunroofControl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA921B3C6E3006F46A9 /* sunroofControl0.png */; };
+		36A6AC7421B3CCAB006F46A9 /* sunroofControl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAA21B3C6E3006F46A9 /* sunroofControl2.png */; };
+		36A6AC7521B3CCAB006F46A9 /* sunroofControl28.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAB21B3C6E3006F46A9 /* sunroofControl28.png */; };
+		36A6AC7621B3CCAB006F46A9 /* sunroofControl14.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAC21B3C6E3006F46A9 /* sunroofControl14.png */; };
+		36A6AC7721B3CCAB006F46A9 /* sunroofControl15.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAD21B3C6E3006F46A9 /* sunroofControl15.png */; };
+		36A6AC7821B3CCAB006F46A9 /* sunroofControl29.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAE21B3C6E3006F46A9 /* sunroofControl29.png */; };
+		36A6AC7921B3CCAB006F46A9 /* sunroofControl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAF21B3C6E3006F46A9 /* sunroofControl3.png */; };
+		36A6AC7A21B3CCAB006F46A9 /* sunroofControl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB021B3C6E3006F46A9 /* sunroofControl7.png */; };
+		36A6AC7B21B3CCAB006F46A9 /* sunroofControl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB121B3C6E3006F46A9 /* sunroofControl11.png */; };
+		36A6AC7C21B3CCAB006F46A9 /* sunroofControl39.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB221B3C6E3006F46A9 /* sunroofControl39.png */; };
+		36A6AC7D21B3CCAB006F46A9 /* sunroofControl38.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB321B3C6E3006F46A9 /* sunroofControl38.png */; };
+		36A6AC7E21B3CCAB006F46A9 /* sunroofControl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB421B3C6E3006F46A9 /* sunroofControl10.png */; };
+		36A6AC7F21B3CCAB006F46A9 /* sunroofControl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB521B3C6E3006F46A9 /* sunroofControl6.png */; };
+		36A6AC8021B3CCAB006F46A9 /* sunroofControl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB621B3C6E3006F46A9 /* sunroofControl4.png */; };
+		36A6AC8121B3CCAB006F46A9 /* sunroofControl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB721B3C6E3006F46A9 /* sunroofControl12.png */; };
+		36A6AC8221B3CCAB006F46A9 /* sunroofControl13.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB821B3C6E3006F46A9 /* sunroofControl13.png */; };
+		36A6AC8321B3CCAB006F46A9 /* sunroofControl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB921B3C6E3006F46A9 /* sunroofControl5.png */; };
+		36A6AC8421B3CCAB006F46A9 /* sunroofControl100.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBA21B3C6E3006F46A9 /* sunroofControl100.png */; };
+		36A6AC8521B3CCAB006F46A9 /* sunroofControl48.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBB21B3C6E3006F46A9 /* sunroofControl48.png */; };
+		36A6AC8621B3CCAB006F46A9 /* sunroofControl60.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBC21B3C6E3006F46A9 /* sunroofControl60.png */; };
+		36A6AC8721B3CCAB006F46A9 /* sunroofControl74.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBD21B3C6E3006F46A9 /* sunroofControl74.png */; };
+		36A6AC8821B3CCAB006F46A9 /* sunroofControl75.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBE21B3C6E3006F46A9 /* sunroofControl75.png */; };
+		36A6AC8921B3CCAB006F46A9 /* sunroofControl61.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBF21B3C6E3006F46A9 /* sunroofControl61.png */; };
+		36A6AC8A21B3CCAB006F46A9 /* sunroofControl49.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC021B3C6E3006F46A9 /* sunroofControl49.png */; };
+		36A6AC8B21B3CCAB006F46A9 /* sunroofControl77.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC121B3C6E3006F46A9 /* sunroofControl77.png */; };
+		36A6AC8C21B3CCAB006F46A9 /* sunroofControl63.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC221B3C6E3006F46A9 /* sunroofControl63.png */; };
+		36A6AC8D21B3CCAB006F46A9 /* sunroofControl88.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC321B3C6E3006F46A9 /* sunroofControl88.png */; };
+		36A6AC8E21B3CCAB006F46A9 /* sunroofControl89.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC421B3C6E3006F46A9 /* sunroofControl89.png */; };
+		36A6AC8F21B3CCAB006F46A9 /* sunroofControl62.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC521B3C6E3006F46A9 /* sunroofControl62.png */; };
+		36A6AC9021B3CCAB006F46A9 /* sunroofControl76.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC621B3C6E3006F46A9 /* sunroofControl76.png */; };
+		36A6AC9121B3CCAB006F46A9 /* sunroofControl72.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC721B3C6E3006F46A9 /* sunroofControl72.png */; };
+		36A6AC9221B3CCAB006F46A9 /* sunroofControl66.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC821B3C6E3006F46A9 /* sunroofControl66.png */; };
+		36A6AC9321B3CCAB006F46A9 /* sunroofControl99.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC921B3C6E3006F46A9 /* sunroofControl99.png */; };
+		36A6AC9421B3CCAB006F46A9 /* sunroofControl98.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCA21B3C6E3006F46A9 /* sunroofControl98.png */; };
+		36A6AC9521B3CCAB006F46A9 /* sunroofControl67.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCB21B3C6E3006F46A9 /* sunroofControl67.png */; };
+		36A6AC9621B3CCAB006F46A9 /* sunroofControl73.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCC21B3C6E3006F46A9 /* sunroofControl73.png */; };
+		36A6AC9721B3CCAB006F46A9 /* sunroofControl65.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCD21B3C6E3006F46A9 /* sunroofControl65.png */; };
+		36A6AC9821B3CCAB006F46A9 /* sunroofControl71.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCE21B3C6E3006F46A9 /* sunroofControl71.png */; };
+		36A6AC9921B3CCAB006F46A9 /* sunroofControl59.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCF21B3C6E3006F46A9 /* sunroofControl59.png */; };
+		36A6AC9A21B3CCAB006F46A9 /* sunroofControl58.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD021B3C6E3006F46A9 /* sunroofControl58.png */; };
+		36A6AC9B21B3CCAB006F46A9 /* sunroofControl70.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD121B3C6E3006F46A9 /* sunroofControl70.png */; };
+		36A6AC9C21B3CCAB006F46A9 /* sunroofControl64.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD221B3C6E3006F46A9 /* sunroofControl64.png */; };
+		36A6AC9D21B3CCAB006F46A9 /* sunroofControl69.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD321B3C6E3006F46A9 /* sunroofControl69.png */; };
+		36A6AC9E21B3CCAB006F46A9 /* sunroofControl41.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD421B3C6E3006F46A9 /* sunroofControl41.png */; };
+		36A6AC9F21B3CCAB006F46A9 /* sunroofControl55.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD521B3C6E3006F46A9 /* sunroofControl55.png */; };
+		36A6ACA021B3CCAB006F46A9 /* sunroofControl82.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD621B3C6E3006F46A9 /* sunroofControl82.png */; };
+		36A6ACA121B3CCAB006F46A9 /* sunroofControl96.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD721B3C6E3006F46A9 /* sunroofControl96.png */; };
+		36A6ACA221B3CCAB006F46A9 /* sunroofControl97.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD821B3C6E3006F46A9 /* sunroofControl97.png */; };
+		36A6ACA321B3CCAB006F46A9 /* sunroofControl83.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD921B3C6E3006F46A9 /* sunroofControl83.png */; };
+		36A6ACA421B3CCAB006F46A9 /* sunroofControl54.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDA21B3C6E3006F46A9 /* sunroofControl54.png */; };
+		36A6ACA521B3CCAB006F46A9 /* sunroofControl40.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDB21B3C6E3006F46A9 /* sunroofControl40.png */; };
+		36A6ACA621B3CCAB006F46A9 /* sunroofControl68.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDC21B3C6E3006F46A9 /* sunroofControl68.png */; };
+		36A6ACA721B3CCAB006F46A9 /* sunroofControl56.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDD21B3C6E3006F46A9 /* sunroofControl56.png */; };
+		36A6ACA821B3CCAB006F46A9 /* sunroofControl42.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDE21B3C6E3006F46A9 /* sunroofControl42.png */; };
+		36A6ACA921B3CCAB006F46A9 /* sunroofControl95.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDF21B3C6E3006F46A9 /* sunroofControl95.png */; };
+		36A6ACAA21B3CCAB006F46A9 /* sunroofControl81.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE021B3C6E3006F46A9 /* sunroofControl81.png */; };
+		36A6ACAB21B3CCAB006F46A9 /* sunroofControl80.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE121B3C6E3006F46A9 /* sunroofControl80.png */; };
+		36A6ACAC21B3CCAB006F46A9 /* sunroofControl94.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE221B3C6E3006F46A9 /* sunroofControl94.png */; };
+		36A6ACAD21B3CCAB006F46A9 /* sunroofControl43.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE321B3C6E3006F46A9 /* sunroofControl43.png */; };
+		36A6ACAE21B3CCAB006F46A9 /* sunroofControl57.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE421B3C6E3006F46A9 /* sunroofControl57.png */; };
+		36A6ACAF21B3CCAB006F46A9 /* sunroofControl53.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE521B3C6E3006F46A9 /* sunroofControl53.png */; };
+		36A6ACB021B3CCAB006F46A9 /* sunroofControl47.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE621B3C6E3006F46A9 /* sunroofControl47.png */; };
+		36A6ACB121B3CCAB006F46A9 /* sunroofControl90.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE721B3C6E3006F46A9 /* sunroofControl90.png */; };
+		36A6ACB221B3CCAB006F46A9 /* sunroofControl84.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE821B3C6E3006F46A9 /* sunroofControl84.png */; };
+		36A6ACB321B3CCAB006F46A9 /* sunroofControl85.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE921B3C6E3006F46A9 /* sunroofControl85.png */; };
+		36A6ACB421B3CCAB006F46A9 /* sunroofControl91.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEA21B3C6E3006F46A9 /* sunroofControl91.png */; };
+		36A6ACB521B3CCAB006F46A9 /* sunroofControl46.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEB21B3C6E3006F46A9 /* sunroofControl46.png */; };
+		36A6ACB621B3CCAB006F46A9 /* sunroofControl52.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEC21B3C6E3006F46A9 /* sunroofControl52.png */; };
+		36A6ACB721B3CCAB006F46A9 /* sunroofControl44.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABED21B3C6E3006F46A9 /* sunroofControl44.png */; };
+		36A6ACB821B3CCAB006F46A9 /* sunroofControl50.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEE21B3C6E3006F46A9 /* sunroofControl50.png */; };
+		36A6ACB921B3CCAB006F46A9 /* sunroofControl78.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEF21B3C6E3006F46A9 /* sunroofControl78.png */; };
+		36A6ACBA21B3CCAB006F46A9 /* sunroofControl87.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF021B3C6E3006F46A9 /* sunroofControl87.png */; };
+		36A6ACBB21B3CCAB006F46A9 /* sunroofControl93.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF121B3C6E3006F46A9 /* sunroofControl93.png */; };
+		36A6ACBC21B3CCAB006F46A9 /* sunroofControl92.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF221B3C6E3006F46A9 /* sunroofControl92.png */; };
+		36A6ACBD21B3CCAB006F46A9 /* sunroofControl86.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF321B3C6E3006F46A9 /* sunroofControl86.png */; };
+		36A6ACBE21B3CCAB006F46A9 /* sunroofControl79.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF421B3C6E3006F46A9 /* sunroofControl79.png */; };
+		36A6ACBF21B3CCAB006F46A9 /* sunroofControl51.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF521B3C6E3006F46A9 /* sunroofControl51.png */; };
+		36A6ACC021B3CCAB006F46A9 /* sunroofControl45.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF621B3C6E3006F46A9 /* sunroofControl45.png */; };
+		36A6ACC121B3CCAB006F46A9 /* sunroofControl8.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF721B3C6E3006F46A9 /* sunroofControl8.png */; };
+		36A6ACC221B3CCAB006F46A9 /* sunroofControl22.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF821B3C6E3006F46A9 /* sunroofControl22.png */; };
+		36A6ACC321B3CCAB006F46A9 /* sunroofControl36.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF921B3C6E3006F46A9 /* sunroofControl36.png */; };
+		36A6ACC421B3CCAB006F46A9 /* sunroofControl37.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFA21B3C6E3006F46A9 /* sunroofControl37.png */; };
+		36A6ACC521B3CCAB006F46A9 /* sunroofControl23.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFB21B3C6E3006F46A9 /* sunroofControl23.png */; };
+		36A6ACC621B3CCAB006F46A9 /* sunroofControl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFC21B3C6E3006F46A9 /* sunroofControl9.png */; };
+		36A6ACC721B3CCAB006F46A9 /* sunroofControl35.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFD21B3C6E3006F46A9 /* sunroofControl35.png */; };
+		36A6ACC821B3CCAB006F46A9 /* sunroofControl21.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFE21B3C6E4006F46A9 /* sunroofControl21.png */; };
+		36A6ACC921B3CCAB006F46A9 /* sunroofControl20.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFF21B3C6E4006F46A9 /* sunroofControl20.png */; };
+		36A6ACCA21B3CCAB006F46A9 /* sunroofControl34.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0021B3C6E4006F46A9 /* sunroofControl34.png */; };
+		36A6ACCB21B3CCAB006F46A9 /* sunroofControl30.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0121B3C6E4006F46A9 /* sunroofControl30.png */; };
+		36A6ACCC21B3CCAB006F46A9 /* sunroofControl24.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0221B3C6E4006F46A9 /* sunroofControl24.png */; };
+		36A6ACCD21B3CCAB006F46A9 /* sunroofControl18.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0321B3C6E4006F46A9 /* sunroofControl18.png */; };
+		36A6ACCE21B3CCAB006F46A9 /* sunroofControl19.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0421B3C6E4006F46A9 /* sunroofControl19.png */; };
+		36A6ACCF21B3CCAB006F46A9 /* sunroofControl25.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0521B3C6E4006F46A9 /* sunroofControl25.png */; };
+		36A6ACD021B3CCAB006F46A9 /* sunroofControl31.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0621B3C6E4006F46A9 /* sunroofControl31.png */; };
+		36A6ACD121B3CCAB006F46A9 /* sunroofControl27.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0721B3C6E4006F46A9 /* sunroofControl27.png */; };
+		36A6ACD221B3CCAB006F46A9 /* sunroofControl33.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0821B3C6E4006F46A9 /* sunroofControl33.png */; };
+		36A6ACD321B3CCAB006F46A9 /* sunroofControl32.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0921B3C6E4006F46A9 /* sunroofControl32.png */; };
+		36A6ACD421B3CCAB006F46A9 /* sunroofControl26.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0A21B3C6E4006F46A9 /* sunroofControl26.png */; };
+		36A6ACD521B3CCAB006F46A9 /* sunroofControl1.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA621B3C6E3006F46A9 /* sunroofControl1.png */; };
+		36A6ACD621B3CCAB006F46A9 /* sunroofControl17.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA721B3C6E3006F46A9 /* sunroofControl17.png */; };
+		36A6ACD721B3CCAB006F46A9 /* sunroofControl16.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA821B3C6E3006F46A9 /* sunroofControl16.png */; };
+		36A6ACD821B3CCAB006F46A9 /* sunroofControl0.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABA921B3C6E3006F46A9 /* sunroofControl0.png */; };
+		36A6ACD921B3CCAB006F46A9 /* sunroofControl2.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAA21B3C6E3006F46A9 /* sunroofControl2.png */; };
+		36A6ACDA21B3CCAB006F46A9 /* sunroofControl28.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAB21B3C6E3006F46A9 /* sunroofControl28.png */; };
+		36A6ACDB21B3CCAB006F46A9 /* sunroofControl14.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAC21B3C6E3006F46A9 /* sunroofControl14.png */; };
+		36A6ACDC21B3CCAB006F46A9 /* sunroofControl15.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAD21B3C6E3006F46A9 /* sunroofControl15.png */; };
+		36A6ACDD21B3CCAB006F46A9 /* sunroofControl29.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAE21B3C6E3006F46A9 /* sunroofControl29.png */; };
+		36A6ACDE21B3CCAB006F46A9 /* sunroofControl3.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABAF21B3C6E3006F46A9 /* sunroofControl3.png */; };
+		36A6ACDF21B3CCAB006F46A9 /* sunroofControl7.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB021B3C6E3006F46A9 /* sunroofControl7.png */; };
+		36A6ACE021B3CCAB006F46A9 /* sunroofControl11.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB121B3C6E3006F46A9 /* sunroofControl11.png */; };
+		36A6ACE121B3CCAB006F46A9 /* sunroofControl39.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB221B3C6E3006F46A9 /* sunroofControl39.png */; };
+		36A6ACE221B3CCAB006F46A9 /* sunroofControl38.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB321B3C6E3006F46A9 /* sunroofControl38.png */; };
+		36A6ACE321B3CCAB006F46A9 /* sunroofControl10.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB421B3C6E3006F46A9 /* sunroofControl10.png */; };
+		36A6ACE421B3CCAB006F46A9 /* sunroofControl6.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB521B3C6E3006F46A9 /* sunroofControl6.png */; };
+		36A6ACE521B3CCAB006F46A9 /* sunroofControl4.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB621B3C6E3006F46A9 /* sunroofControl4.png */; };
+		36A6ACE621B3CCAB006F46A9 /* sunroofControl12.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB721B3C6E3006F46A9 /* sunroofControl12.png */; };
+		36A6ACE721B3CCAB006F46A9 /* sunroofControl13.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB821B3C6E3006F46A9 /* sunroofControl13.png */; };
+		36A6ACE821B3CCAB006F46A9 /* sunroofControl5.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABB921B3C6E3006F46A9 /* sunroofControl5.png */; };
+		36A6ACE921B3CCAB006F46A9 /* sunroofControl100.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBA21B3C6E3006F46A9 /* sunroofControl100.png */; };
+		36A6ACEA21B3CCAB006F46A9 /* sunroofControl48.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBB21B3C6E3006F46A9 /* sunroofControl48.png */; };
+		36A6ACEB21B3CCAB006F46A9 /* sunroofControl60.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBC21B3C6E3006F46A9 /* sunroofControl60.png */; };
+		36A6ACEC21B3CCAB006F46A9 /* sunroofControl74.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBD21B3C6E3006F46A9 /* sunroofControl74.png */; };
+		36A6ACED21B3CCAB006F46A9 /* sunroofControl75.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBE21B3C6E3006F46A9 /* sunroofControl75.png */; };
+		36A6ACEE21B3CCAB006F46A9 /* sunroofControl61.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABBF21B3C6E3006F46A9 /* sunroofControl61.png */; };
+		36A6ACEF21B3CCAB006F46A9 /* sunroofControl49.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC021B3C6E3006F46A9 /* sunroofControl49.png */; };
+		36A6ACF021B3CCAB006F46A9 /* sunroofControl77.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC121B3C6E3006F46A9 /* sunroofControl77.png */; };
+		36A6ACF121B3CCAB006F46A9 /* sunroofControl63.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC221B3C6E3006F46A9 /* sunroofControl63.png */; };
+		36A6ACF221B3CCAB006F46A9 /* sunroofControl88.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC321B3C6E3006F46A9 /* sunroofControl88.png */; };
+		36A6ACF321B3CCAB006F46A9 /* sunroofControl89.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC421B3C6E3006F46A9 /* sunroofControl89.png */; };
+		36A6ACF421B3CCAB006F46A9 /* sunroofControl62.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC521B3C6E3006F46A9 /* sunroofControl62.png */; };
+		36A6ACF521B3CCAB006F46A9 /* sunroofControl76.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC621B3C6E3006F46A9 /* sunroofControl76.png */; };
+		36A6ACF621B3CCAB006F46A9 /* sunroofControl72.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC721B3C6E3006F46A9 /* sunroofControl72.png */; };
+		36A6ACF721B3CCAB006F46A9 /* sunroofControl66.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC821B3C6E3006F46A9 /* sunroofControl66.png */; };
+		36A6ACF821B3CCAB006F46A9 /* sunroofControl99.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABC921B3C6E3006F46A9 /* sunroofControl99.png */; };
+		36A6ACF921B3CCAB006F46A9 /* sunroofControl98.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCA21B3C6E3006F46A9 /* sunroofControl98.png */; };
+		36A6ACFA21B3CCAB006F46A9 /* sunroofControl67.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCB21B3C6E3006F46A9 /* sunroofControl67.png */; };
+		36A6ACFB21B3CCAB006F46A9 /* sunroofControl73.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCC21B3C6E3006F46A9 /* sunroofControl73.png */; };
+		36A6ACFC21B3CCAB006F46A9 /* sunroofControl65.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCD21B3C6E3006F46A9 /* sunroofControl65.png */; };
+		36A6ACFD21B3CCAB006F46A9 /* sunroofControl71.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCE21B3C6E3006F46A9 /* sunroofControl71.png */; };
+		36A6ACFE21B3CCAB006F46A9 /* sunroofControl59.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABCF21B3C6E3006F46A9 /* sunroofControl59.png */; };
+		36A6ACFF21B3CCAB006F46A9 /* sunroofControl58.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD021B3C6E3006F46A9 /* sunroofControl58.png */; };
+		36A6AD0021B3CCAB006F46A9 /* sunroofControl70.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD121B3C6E3006F46A9 /* sunroofControl70.png */; };
+		36A6AD0121B3CCAB006F46A9 /* sunroofControl64.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD221B3C6E3006F46A9 /* sunroofControl64.png */; };
+		36A6AD0221B3CCAB006F46A9 /* sunroofControl69.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD321B3C6E3006F46A9 /* sunroofControl69.png */; };
+		36A6AD0321B3CCAB006F46A9 /* sunroofControl41.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD421B3C6E3006F46A9 /* sunroofControl41.png */; };
+		36A6AD0421B3CCAB006F46A9 /* sunroofControl55.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD521B3C6E3006F46A9 /* sunroofControl55.png */; };
+		36A6AD0521B3CCAB006F46A9 /* sunroofControl82.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD621B3C6E3006F46A9 /* sunroofControl82.png */; };
+		36A6AD0621B3CCAB006F46A9 /* sunroofControl96.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD721B3C6E3006F46A9 /* sunroofControl96.png */; };
+		36A6AD0721B3CCAB006F46A9 /* sunroofControl97.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD821B3C6E3006F46A9 /* sunroofControl97.png */; };
+		36A6AD0821B3CCAB006F46A9 /* sunroofControl83.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABD921B3C6E3006F46A9 /* sunroofControl83.png */; };
+		36A6AD0921B3CCAB006F46A9 /* sunroofControl54.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDA21B3C6E3006F46A9 /* sunroofControl54.png */; };
+		36A6AD0A21B3CCAB006F46A9 /* sunroofControl40.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDB21B3C6E3006F46A9 /* sunroofControl40.png */; };
+		36A6AD0B21B3CCAB006F46A9 /* sunroofControl68.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDC21B3C6E3006F46A9 /* sunroofControl68.png */; };
+		36A6AD0C21B3CCAB006F46A9 /* sunroofControl56.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDD21B3C6E3006F46A9 /* sunroofControl56.png */; };
+		36A6AD0D21B3CCAB006F46A9 /* sunroofControl42.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDE21B3C6E3006F46A9 /* sunroofControl42.png */; };
+		36A6AD0E21B3CCAB006F46A9 /* sunroofControl95.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABDF21B3C6E3006F46A9 /* sunroofControl95.png */; };
+		36A6AD0F21B3CCAB006F46A9 /* sunroofControl81.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE021B3C6E3006F46A9 /* sunroofControl81.png */; };
+		36A6AD1021B3CCAB006F46A9 /* sunroofControl80.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE121B3C6E3006F46A9 /* sunroofControl80.png */; };
+		36A6AD1121B3CCAB006F46A9 /* sunroofControl94.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE221B3C6E3006F46A9 /* sunroofControl94.png */; };
+		36A6AD1221B3CCAB006F46A9 /* sunroofControl43.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE321B3C6E3006F46A9 /* sunroofControl43.png */; };
+		36A6AD1321B3CCAB006F46A9 /* sunroofControl57.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE421B3C6E3006F46A9 /* sunroofControl57.png */; };
+		36A6AD1421B3CCAB006F46A9 /* sunroofControl53.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE521B3C6E3006F46A9 /* sunroofControl53.png */; };
+		36A6AD1521B3CCAB006F46A9 /* sunroofControl47.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE621B3C6E3006F46A9 /* sunroofControl47.png */; };
+		36A6AD1621B3CCAB006F46A9 /* sunroofControl90.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE721B3C6E3006F46A9 /* sunroofControl90.png */; };
+		36A6AD1721B3CCAB006F46A9 /* sunroofControl84.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE821B3C6E3006F46A9 /* sunroofControl84.png */; };
+		36A6AD1821B3CCAB006F46A9 /* sunroofControl85.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABE921B3C6E3006F46A9 /* sunroofControl85.png */; };
+		36A6AD1921B3CCAB006F46A9 /* sunroofControl91.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEA21B3C6E3006F46A9 /* sunroofControl91.png */; };
+		36A6AD1A21B3CCAB006F46A9 /* sunroofControl46.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEB21B3C6E3006F46A9 /* sunroofControl46.png */; };
+		36A6AD1B21B3CCAB006F46A9 /* sunroofControl52.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEC21B3C6E3006F46A9 /* sunroofControl52.png */; };
+		36A6AD1C21B3CCAB006F46A9 /* sunroofControl44.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABED21B3C6E3006F46A9 /* sunroofControl44.png */; };
+		36A6AD1D21B3CCAB006F46A9 /* sunroofControl50.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEE21B3C6E3006F46A9 /* sunroofControl50.png */; };
+		36A6AD1E21B3CCAB006F46A9 /* sunroofControl78.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABEF21B3C6E3006F46A9 /* sunroofControl78.png */; };
+		36A6AD1F21B3CCAB006F46A9 /* sunroofControl87.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF021B3C6E3006F46A9 /* sunroofControl87.png */; };
+		36A6AD2021B3CCAB006F46A9 /* sunroofControl93.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF121B3C6E3006F46A9 /* sunroofControl93.png */; };
+		36A6AD2121B3CCAB006F46A9 /* sunroofControl92.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF221B3C6E3006F46A9 /* sunroofControl92.png */; };
+		36A6AD2221B3CCAB006F46A9 /* sunroofControl86.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF321B3C6E3006F46A9 /* sunroofControl86.png */; };
+		36A6AD2321B3CCAB006F46A9 /* sunroofControl79.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF421B3C6E3006F46A9 /* sunroofControl79.png */; };
+		36A6AD2421B3CCAB006F46A9 /* sunroofControl51.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF521B3C6E3006F46A9 /* sunroofControl51.png */; };
+		36A6AD2521B3CCAB006F46A9 /* sunroofControl45.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF621B3C6E3006F46A9 /* sunroofControl45.png */; };
+		36A6AD2621B3CCAB006F46A9 /* sunroofControl8.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF721B3C6E3006F46A9 /* sunroofControl8.png */; };
+		36A6AD2721B3CCAB006F46A9 /* sunroofControl22.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF821B3C6E3006F46A9 /* sunroofControl22.png */; };
+		36A6AD2821B3CCAB006F46A9 /* sunroofControl36.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABF921B3C6E3006F46A9 /* sunroofControl36.png */; };
+		36A6AD2921B3CCAB006F46A9 /* sunroofControl37.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFA21B3C6E3006F46A9 /* sunroofControl37.png */; };
+		36A6AD2A21B3CCAB006F46A9 /* sunroofControl23.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFB21B3C6E3006F46A9 /* sunroofControl23.png */; };
+		36A6AD2B21B3CCAB006F46A9 /* sunroofControl9.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFC21B3C6E3006F46A9 /* sunroofControl9.png */; };
+		36A6AD2C21B3CCAB006F46A9 /* sunroofControl35.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFD21B3C6E3006F46A9 /* sunroofControl35.png */; };
+		36A6AD2D21B3CCAB006F46A9 /* sunroofControl21.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFE21B3C6E4006F46A9 /* sunroofControl21.png */; };
+		36A6AD2E21B3CCAB006F46A9 /* sunroofControl20.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6ABFF21B3C6E4006F46A9 /* sunroofControl20.png */; };
+		36A6AD2F21B3CCAB006F46A9 /* sunroofControl34.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0021B3C6E4006F46A9 /* sunroofControl34.png */; };
+		36A6AD3021B3CCAB006F46A9 /* sunroofControl30.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0121B3C6E4006F46A9 /* sunroofControl30.png */; };
+		36A6AD3121B3CCAB006F46A9 /* sunroofControl24.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0221B3C6E4006F46A9 /* sunroofControl24.png */; };
+		36A6AD3221B3CCAB006F46A9 /* sunroofControl18.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0321B3C6E4006F46A9 /* sunroofControl18.png */; };
+		36A6AD3321B3CCAB006F46A9 /* sunroofControl19.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0421B3C6E4006F46A9 /* sunroofControl19.png */; };
+		36A6AD3421B3CCAB006F46A9 /* sunroofControl25.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0521B3C6E4006F46A9 /* sunroofControl25.png */; };
+		36A6AD3521B3CCAB006F46A9 /* sunroofControl31.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0621B3C6E4006F46A9 /* sunroofControl31.png */; };
+		36A6AD3621B3CCAB006F46A9 /* sunroofControl27.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0721B3C6E4006F46A9 /* sunroofControl27.png */; };
+		36A6AD3721B3CCAB006F46A9 /* sunroofControl33.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0821B3C6E4006F46A9 /* sunroofControl33.png */; };
+		36A6AD3821B3CCAB006F46A9 /* sunroofControl32.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0921B3C6E4006F46A9 /* sunroofControl32.png */; };
+		36A6AD3921B3CCAB006F46A9 /* sunroofControl26.png in Resources */ = {isa = PBXBuildFile; fileRef = 36A6AC0A21B3C6E4006F46A9 /* sunroofControl26.png */; };
 		36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557421B24EE500D6D75C /* AppDelegate.swift */; };
 		36E8557721B24EE500D6D75C /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557621B24EE500D6D75C /* MapVC.swift */; };
 		36E8557921B24EE500D6D75C /* ReportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36E8557821B24EE500D6D75C /* ReportVC.swift */; };
@@ -105,6 +409,108 @@
 		36A6A7BF21B39800006F46A9 /* measure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = measure.png; sourceTree = "<group>"; };
 		36A6A7C121B3A056006F46A9 /* sound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sound.png; sourceTree = "<group>"; };
 		36A6A7C321B3A115006F46A9 /* SoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundVC.swift; sourceTree = "<group>"; };
+		36A6A7C521B3C293006F46A9 /* ViewReportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewReportVC.swift; sourceTree = "<group>"; };
+		36A6ABA621B3C6E3006F46A9 /* sunroofControl1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl1.png; sourceTree = "<group>"; };
+		36A6ABA721B3C6E3006F46A9 /* sunroofControl17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl17.png; sourceTree = "<group>"; };
+		36A6ABA821B3C6E3006F46A9 /* sunroofControl16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl16.png; sourceTree = "<group>"; };
+		36A6ABA921B3C6E3006F46A9 /* sunroofControl0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl0.png; sourceTree = "<group>"; };
+		36A6ABAA21B3C6E3006F46A9 /* sunroofControl2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl2.png; sourceTree = "<group>"; };
+		36A6ABAB21B3C6E3006F46A9 /* sunroofControl28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl28.png; sourceTree = "<group>"; };
+		36A6ABAC21B3C6E3006F46A9 /* sunroofControl14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl14.png; sourceTree = "<group>"; };
+		36A6ABAD21B3C6E3006F46A9 /* sunroofControl15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl15.png; sourceTree = "<group>"; };
+		36A6ABAE21B3C6E3006F46A9 /* sunroofControl29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl29.png; sourceTree = "<group>"; };
+		36A6ABAF21B3C6E3006F46A9 /* sunroofControl3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl3.png; sourceTree = "<group>"; };
+		36A6ABB021B3C6E3006F46A9 /* sunroofControl7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl7.png; sourceTree = "<group>"; };
+		36A6ABB121B3C6E3006F46A9 /* sunroofControl11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl11.png; sourceTree = "<group>"; };
+		36A6ABB221B3C6E3006F46A9 /* sunroofControl39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl39.png; sourceTree = "<group>"; };
+		36A6ABB321B3C6E3006F46A9 /* sunroofControl38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl38.png; sourceTree = "<group>"; };
+		36A6ABB421B3C6E3006F46A9 /* sunroofControl10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl10.png; sourceTree = "<group>"; };
+		36A6ABB521B3C6E3006F46A9 /* sunroofControl6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl6.png; sourceTree = "<group>"; };
+		36A6ABB621B3C6E3006F46A9 /* sunroofControl4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl4.png; sourceTree = "<group>"; };
+		36A6ABB721B3C6E3006F46A9 /* sunroofControl12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl12.png; sourceTree = "<group>"; };
+		36A6ABB821B3C6E3006F46A9 /* sunroofControl13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl13.png; sourceTree = "<group>"; };
+		36A6ABB921B3C6E3006F46A9 /* sunroofControl5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl5.png; sourceTree = "<group>"; };
+		36A6ABBA21B3C6E3006F46A9 /* sunroofControl100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl100.png; sourceTree = "<group>"; };
+		36A6ABBB21B3C6E3006F46A9 /* sunroofControl48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl48.png; sourceTree = "<group>"; };
+		36A6ABBC21B3C6E3006F46A9 /* sunroofControl60.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl60.png; sourceTree = "<group>"; };
+		36A6ABBD21B3C6E3006F46A9 /* sunroofControl74.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl74.png; sourceTree = "<group>"; };
+		36A6ABBE21B3C6E3006F46A9 /* sunroofControl75.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl75.png; sourceTree = "<group>"; };
+		36A6ABBF21B3C6E3006F46A9 /* sunroofControl61.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl61.png; sourceTree = "<group>"; };
+		36A6ABC021B3C6E3006F46A9 /* sunroofControl49.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl49.png; sourceTree = "<group>"; };
+		36A6ABC121B3C6E3006F46A9 /* sunroofControl77.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl77.png; sourceTree = "<group>"; };
+		36A6ABC221B3C6E3006F46A9 /* sunroofControl63.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl63.png; sourceTree = "<group>"; };
+		36A6ABC321B3C6E3006F46A9 /* sunroofControl88.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl88.png; sourceTree = "<group>"; };
+		36A6ABC421B3C6E3006F46A9 /* sunroofControl89.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl89.png; sourceTree = "<group>"; };
+		36A6ABC521B3C6E3006F46A9 /* sunroofControl62.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl62.png; sourceTree = "<group>"; };
+		36A6ABC621B3C6E3006F46A9 /* sunroofControl76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl76.png; sourceTree = "<group>"; };
+		36A6ABC721B3C6E3006F46A9 /* sunroofControl72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl72.png; sourceTree = "<group>"; };
+		36A6ABC821B3C6E3006F46A9 /* sunroofControl66.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl66.png; sourceTree = "<group>"; };
+		36A6ABC921B3C6E3006F46A9 /* sunroofControl99.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl99.png; sourceTree = "<group>"; };
+		36A6ABCA21B3C6E3006F46A9 /* sunroofControl98.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl98.png; sourceTree = "<group>"; };
+		36A6ABCB21B3C6E3006F46A9 /* sunroofControl67.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl67.png; sourceTree = "<group>"; };
+		36A6ABCC21B3C6E3006F46A9 /* sunroofControl73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl73.png; sourceTree = "<group>"; };
+		36A6ABCD21B3C6E3006F46A9 /* sunroofControl65.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl65.png; sourceTree = "<group>"; };
+		36A6ABCE21B3C6E3006F46A9 /* sunroofControl71.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl71.png; sourceTree = "<group>"; };
+		36A6ABCF21B3C6E3006F46A9 /* sunroofControl59.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl59.png; sourceTree = "<group>"; };
+		36A6ABD021B3C6E3006F46A9 /* sunroofControl58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl58.png; sourceTree = "<group>"; };
+		36A6ABD121B3C6E3006F46A9 /* sunroofControl70.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl70.png; sourceTree = "<group>"; };
+		36A6ABD221B3C6E3006F46A9 /* sunroofControl64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl64.png; sourceTree = "<group>"; };
+		36A6ABD321B3C6E3006F46A9 /* sunroofControl69.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl69.png; sourceTree = "<group>"; };
+		36A6ABD421B3C6E3006F46A9 /* sunroofControl41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl41.png; sourceTree = "<group>"; };
+		36A6ABD521B3C6E3006F46A9 /* sunroofControl55.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl55.png; sourceTree = "<group>"; };
+		36A6ABD621B3C6E3006F46A9 /* sunroofControl82.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl82.png; sourceTree = "<group>"; };
+		36A6ABD721B3C6E3006F46A9 /* sunroofControl96.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl96.png; sourceTree = "<group>"; };
+		36A6ABD821B3C6E3006F46A9 /* sunroofControl97.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl97.png; sourceTree = "<group>"; };
+		36A6ABD921B3C6E3006F46A9 /* sunroofControl83.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl83.png; sourceTree = "<group>"; };
+		36A6ABDA21B3C6E3006F46A9 /* sunroofControl54.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl54.png; sourceTree = "<group>"; };
+		36A6ABDB21B3C6E3006F46A9 /* sunroofControl40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl40.png; sourceTree = "<group>"; };
+		36A6ABDC21B3C6E3006F46A9 /* sunroofControl68.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl68.png; sourceTree = "<group>"; };
+		36A6ABDD21B3C6E3006F46A9 /* sunroofControl56.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl56.png; sourceTree = "<group>"; };
+		36A6ABDE21B3C6E3006F46A9 /* sunroofControl42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl42.png; sourceTree = "<group>"; };
+		36A6ABDF21B3C6E3006F46A9 /* sunroofControl95.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl95.png; sourceTree = "<group>"; };
+		36A6ABE021B3C6E3006F46A9 /* sunroofControl81.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl81.png; sourceTree = "<group>"; };
+		36A6ABE121B3C6E3006F46A9 /* sunroofControl80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl80.png; sourceTree = "<group>"; };
+		36A6ABE221B3C6E3006F46A9 /* sunroofControl94.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl94.png; sourceTree = "<group>"; };
+		36A6ABE321B3C6E3006F46A9 /* sunroofControl43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl43.png; sourceTree = "<group>"; };
+		36A6ABE421B3C6E3006F46A9 /* sunroofControl57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl57.png; sourceTree = "<group>"; };
+		36A6ABE521B3C6E3006F46A9 /* sunroofControl53.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl53.png; sourceTree = "<group>"; };
+		36A6ABE621B3C6E3006F46A9 /* sunroofControl47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl47.png; sourceTree = "<group>"; };
+		36A6ABE721B3C6E3006F46A9 /* sunroofControl90.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl90.png; sourceTree = "<group>"; };
+		36A6ABE821B3C6E3006F46A9 /* sunroofControl84.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl84.png; sourceTree = "<group>"; };
+		36A6ABE921B3C6E3006F46A9 /* sunroofControl85.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl85.png; sourceTree = "<group>"; };
+		36A6ABEA21B3C6E3006F46A9 /* sunroofControl91.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl91.png; sourceTree = "<group>"; };
+		36A6ABEB21B3C6E3006F46A9 /* sunroofControl46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl46.png; sourceTree = "<group>"; };
+		36A6ABEC21B3C6E3006F46A9 /* sunroofControl52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl52.png; sourceTree = "<group>"; };
+		36A6ABED21B3C6E3006F46A9 /* sunroofControl44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl44.png; sourceTree = "<group>"; };
+		36A6ABEE21B3C6E3006F46A9 /* sunroofControl50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl50.png; sourceTree = "<group>"; };
+		36A6ABEF21B3C6E3006F46A9 /* sunroofControl78.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl78.png; sourceTree = "<group>"; };
+		36A6ABF021B3C6E3006F46A9 /* sunroofControl87.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl87.png; sourceTree = "<group>"; };
+		36A6ABF121B3C6E3006F46A9 /* sunroofControl93.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl93.png; sourceTree = "<group>"; };
+		36A6ABF221B3C6E3006F46A9 /* sunroofControl92.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl92.png; sourceTree = "<group>"; };
+		36A6ABF321B3C6E3006F46A9 /* sunroofControl86.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl86.png; sourceTree = "<group>"; };
+		36A6ABF421B3C6E3006F46A9 /* sunroofControl79.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl79.png; sourceTree = "<group>"; };
+		36A6ABF521B3C6E3006F46A9 /* sunroofControl51.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl51.png; sourceTree = "<group>"; };
+		36A6ABF621B3C6E3006F46A9 /* sunroofControl45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl45.png; sourceTree = "<group>"; };
+		36A6ABF721B3C6E3006F46A9 /* sunroofControl8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl8.png; sourceTree = "<group>"; };
+		36A6ABF821B3C6E3006F46A9 /* sunroofControl22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl22.png; sourceTree = "<group>"; };
+		36A6ABF921B3C6E3006F46A9 /* sunroofControl36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl36.png; sourceTree = "<group>"; };
+		36A6ABFA21B3C6E3006F46A9 /* sunroofControl37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl37.png; sourceTree = "<group>"; };
+		36A6ABFB21B3C6E3006F46A9 /* sunroofControl23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl23.png; sourceTree = "<group>"; };
+		36A6ABFC21B3C6E3006F46A9 /* sunroofControl9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl9.png; sourceTree = "<group>"; };
+		36A6ABFD21B3C6E3006F46A9 /* sunroofControl35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl35.png; sourceTree = "<group>"; };
+		36A6ABFE21B3C6E4006F46A9 /* sunroofControl21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl21.png; sourceTree = "<group>"; };
+		36A6ABFF21B3C6E4006F46A9 /* sunroofControl20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl20.png; sourceTree = "<group>"; };
+		36A6AC0021B3C6E4006F46A9 /* sunroofControl34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl34.png; sourceTree = "<group>"; };
+		36A6AC0121B3C6E4006F46A9 /* sunroofControl30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl30.png; sourceTree = "<group>"; };
+		36A6AC0221B3C6E4006F46A9 /* sunroofControl24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl24.png; sourceTree = "<group>"; };
+		36A6AC0321B3C6E4006F46A9 /* sunroofControl18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl18.png; sourceTree = "<group>"; };
+		36A6AC0421B3C6E4006F46A9 /* sunroofControl19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl19.png; sourceTree = "<group>"; };
+		36A6AC0521B3C6E4006F46A9 /* sunroofControl25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl25.png; sourceTree = "<group>"; };
+		36A6AC0621B3C6E4006F46A9 /* sunroofControl31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl31.png; sourceTree = "<group>"; };
+		36A6AC0721B3C6E4006F46A9 /* sunroofControl27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl27.png; sourceTree = "<group>"; };
+		36A6AC0821B3C6E4006F46A9 /* sunroofControl33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl33.png; sourceTree = "<group>"; };
+		36A6AC0921B3C6E4006F46A9 /* sunroofControl32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl32.png; sourceTree = "<group>"; };
+		36A6AC0A21B3C6E4006F46A9 /* sunroofControl26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sunroofControl26.png; sourceTree = "<group>"; };
 		36E8557121B24EE500D6D75C /* SafeSpace.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeSpace.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36E8557421B24EE500D6D75C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		36E8557621B24EE500D6D75C /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -208,6 +614,114 @@
 			path = ModernSearchBar;
 			sourceTree = "<group>";
 		};
+		36A6ABA521B3C6E3006F46A9 /* SunroofSliders */ = {
+			isa = PBXGroup;
+			children = (
+				36A6ABA621B3C6E3006F46A9 /* sunroofControl1.png */,
+				36A6ABA721B3C6E3006F46A9 /* sunroofControl17.png */,
+				36A6ABA821B3C6E3006F46A9 /* sunroofControl16.png */,
+				36A6ABA921B3C6E3006F46A9 /* sunroofControl0.png */,
+				36A6ABAA21B3C6E3006F46A9 /* sunroofControl2.png */,
+				36A6ABAB21B3C6E3006F46A9 /* sunroofControl28.png */,
+				36A6ABAC21B3C6E3006F46A9 /* sunroofControl14.png */,
+				36A6ABAD21B3C6E3006F46A9 /* sunroofControl15.png */,
+				36A6ABAE21B3C6E3006F46A9 /* sunroofControl29.png */,
+				36A6ABAF21B3C6E3006F46A9 /* sunroofControl3.png */,
+				36A6ABB021B3C6E3006F46A9 /* sunroofControl7.png */,
+				36A6ABB121B3C6E3006F46A9 /* sunroofControl11.png */,
+				36A6ABB221B3C6E3006F46A9 /* sunroofControl39.png */,
+				36A6ABB321B3C6E3006F46A9 /* sunroofControl38.png */,
+				36A6ABB421B3C6E3006F46A9 /* sunroofControl10.png */,
+				36A6ABB521B3C6E3006F46A9 /* sunroofControl6.png */,
+				36A6ABB621B3C6E3006F46A9 /* sunroofControl4.png */,
+				36A6ABB721B3C6E3006F46A9 /* sunroofControl12.png */,
+				36A6ABB821B3C6E3006F46A9 /* sunroofControl13.png */,
+				36A6ABB921B3C6E3006F46A9 /* sunroofControl5.png */,
+				36A6ABBA21B3C6E3006F46A9 /* sunroofControl100.png */,
+				36A6ABBB21B3C6E3006F46A9 /* sunroofControl48.png */,
+				36A6ABBC21B3C6E3006F46A9 /* sunroofControl60.png */,
+				36A6ABBD21B3C6E3006F46A9 /* sunroofControl74.png */,
+				36A6ABBE21B3C6E3006F46A9 /* sunroofControl75.png */,
+				36A6ABBF21B3C6E3006F46A9 /* sunroofControl61.png */,
+				36A6ABC021B3C6E3006F46A9 /* sunroofControl49.png */,
+				36A6ABC121B3C6E3006F46A9 /* sunroofControl77.png */,
+				36A6ABC221B3C6E3006F46A9 /* sunroofControl63.png */,
+				36A6ABC321B3C6E3006F46A9 /* sunroofControl88.png */,
+				36A6ABC421B3C6E3006F46A9 /* sunroofControl89.png */,
+				36A6ABC521B3C6E3006F46A9 /* sunroofControl62.png */,
+				36A6ABC621B3C6E3006F46A9 /* sunroofControl76.png */,
+				36A6ABC721B3C6E3006F46A9 /* sunroofControl72.png */,
+				36A6ABC821B3C6E3006F46A9 /* sunroofControl66.png */,
+				36A6ABC921B3C6E3006F46A9 /* sunroofControl99.png */,
+				36A6ABCA21B3C6E3006F46A9 /* sunroofControl98.png */,
+				36A6ABCB21B3C6E3006F46A9 /* sunroofControl67.png */,
+				36A6ABCC21B3C6E3006F46A9 /* sunroofControl73.png */,
+				36A6ABCD21B3C6E3006F46A9 /* sunroofControl65.png */,
+				36A6ABCE21B3C6E3006F46A9 /* sunroofControl71.png */,
+				36A6ABCF21B3C6E3006F46A9 /* sunroofControl59.png */,
+				36A6ABD021B3C6E3006F46A9 /* sunroofControl58.png */,
+				36A6ABD121B3C6E3006F46A9 /* sunroofControl70.png */,
+				36A6ABD221B3C6E3006F46A9 /* sunroofControl64.png */,
+				36A6ABD321B3C6E3006F46A9 /* sunroofControl69.png */,
+				36A6ABD421B3C6E3006F46A9 /* sunroofControl41.png */,
+				36A6ABD521B3C6E3006F46A9 /* sunroofControl55.png */,
+				36A6ABD621B3C6E3006F46A9 /* sunroofControl82.png */,
+				36A6ABD721B3C6E3006F46A9 /* sunroofControl96.png */,
+				36A6ABD821B3C6E3006F46A9 /* sunroofControl97.png */,
+				36A6ABD921B3C6E3006F46A9 /* sunroofControl83.png */,
+				36A6ABDA21B3C6E3006F46A9 /* sunroofControl54.png */,
+				36A6ABDB21B3C6E3006F46A9 /* sunroofControl40.png */,
+				36A6ABDC21B3C6E3006F46A9 /* sunroofControl68.png */,
+				36A6ABDD21B3C6E3006F46A9 /* sunroofControl56.png */,
+				36A6ABDE21B3C6E3006F46A9 /* sunroofControl42.png */,
+				36A6ABDF21B3C6E3006F46A9 /* sunroofControl95.png */,
+				36A6ABE021B3C6E3006F46A9 /* sunroofControl81.png */,
+				36A6ABE121B3C6E3006F46A9 /* sunroofControl80.png */,
+				36A6ABE221B3C6E3006F46A9 /* sunroofControl94.png */,
+				36A6ABE321B3C6E3006F46A9 /* sunroofControl43.png */,
+				36A6ABE421B3C6E3006F46A9 /* sunroofControl57.png */,
+				36A6ABE521B3C6E3006F46A9 /* sunroofControl53.png */,
+				36A6ABE621B3C6E3006F46A9 /* sunroofControl47.png */,
+				36A6ABE721B3C6E3006F46A9 /* sunroofControl90.png */,
+				36A6ABE821B3C6E3006F46A9 /* sunroofControl84.png */,
+				36A6ABE921B3C6E3006F46A9 /* sunroofControl85.png */,
+				36A6ABEA21B3C6E3006F46A9 /* sunroofControl91.png */,
+				36A6ABEB21B3C6E3006F46A9 /* sunroofControl46.png */,
+				36A6ABEC21B3C6E3006F46A9 /* sunroofControl52.png */,
+				36A6ABED21B3C6E3006F46A9 /* sunroofControl44.png */,
+				36A6ABEE21B3C6E3006F46A9 /* sunroofControl50.png */,
+				36A6ABEF21B3C6E3006F46A9 /* sunroofControl78.png */,
+				36A6ABF021B3C6E3006F46A9 /* sunroofControl87.png */,
+				36A6ABF121B3C6E3006F46A9 /* sunroofControl93.png */,
+				36A6ABF221B3C6E3006F46A9 /* sunroofControl92.png */,
+				36A6ABF321B3C6E3006F46A9 /* sunroofControl86.png */,
+				36A6ABF421B3C6E3006F46A9 /* sunroofControl79.png */,
+				36A6ABF521B3C6E3006F46A9 /* sunroofControl51.png */,
+				36A6ABF621B3C6E3006F46A9 /* sunroofControl45.png */,
+				36A6ABF721B3C6E3006F46A9 /* sunroofControl8.png */,
+				36A6ABF821B3C6E3006F46A9 /* sunroofControl22.png */,
+				36A6ABF921B3C6E3006F46A9 /* sunroofControl36.png */,
+				36A6ABFA21B3C6E3006F46A9 /* sunroofControl37.png */,
+				36A6ABFB21B3C6E3006F46A9 /* sunroofControl23.png */,
+				36A6ABFC21B3C6E3006F46A9 /* sunroofControl9.png */,
+				36A6ABFD21B3C6E3006F46A9 /* sunroofControl35.png */,
+				36A6ABFE21B3C6E4006F46A9 /* sunroofControl21.png */,
+				36A6ABFF21B3C6E4006F46A9 /* sunroofControl20.png */,
+				36A6AC0021B3C6E4006F46A9 /* sunroofControl34.png */,
+				36A6AC0121B3C6E4006F46A9 /* sunroofControl30.png */,
+				36A6AC0221B3C6E4006F46A9 /* sunroofControl24.png */,
+				36A6AC0321B3C6E4006F46A9 /* sunroofControl18.png */,
+				36A6AC0421B3C6E4006F46A9 /* sunroofControl19.png */,
+				36A6AC0521B3C6E4006F46A9 /* sunroofControl25.png */,
+				36A6AC0621B3C6E4006F46A9 /* sunroofControl31.png */,
+				36A6AC0721B3C6E4006F46A9 /* sunroofControl27.png */,
+				36A6AC0821B3C6E4006F46A9 /* sunroofControl33.png */,
+				36A6AC0921B3C6E4006F46A9 /* sunroofControl32.png */,
+				36A6AC0A21B3C6E4006F46A9 /* sunroofControl26.png */,
+			);
+			path = SunroofSliders;
+			sourceTree = "<group>";
+		};
 		36E8556821B24EE500D6D75C = {
 			isa = PBXGroup;
 			children = (
@@ -286,6 +800,7 @@
 				36A6A7B521B36714006F46A9 /* MeasureVC.swift */,
 				36A6A7B721B36978006F46A9 /* MeasurementsVC.swift */,
 				36A6A7C321B3A115006F46A9 /* SoundVC.swift */,
+				36A6A7C521B3C293006F46A9 /* ViewReportVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -293,6 +808,7 @@
 		36E855A621B2529000D6D75C /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				36A6ABA521B3C6E3006F46A9 /* SunroofSliders */,
 				36A6A7C121B3A056006F46A9 /* sound.png */,
 				36A6A7BF21B39800006F46A9 /* measure.png */,
 				36A6A7BD21B37148006F46A9 /* leftArrow.png */,
@@ -471,38 +987,139 @@
 			buildActionMask = 2147483647;
 			files = (
 				36E855E521B3019800D6D75C /* Roboto-Medium.ttf in Resources */,
+				36A6AC1721B3CCA8006F46A9 /* sunroofControl39.png in Resources */,
+				36A6AC4921B3CCA8006F46A9 /* sunroofControl57.png in Resources */,
+				36A6AC6621B3CCA8006F46A9 /* sunroofControl30.png in Resources */,
+				36A6AC4B21B3CCA8006F46A9 /* sunroofControl47.png in Resources */,
+				36A6AC4421B3CCA8006F46A9 /* sunroofControl95.png in Resources */,
+				36A6AC6B21B3CCA8006F46A9 /* sunroofControl31.png in Resources */,
 				36E855B621B2539B00D6D75C /* input@2x.png in Resources */,
 				36E855B021B2536200D6D75C /* globe@3x.png in Resources */,
+				36A6AC0E21B3CCA8006F46A9 /* sunroofControl0.png in Resources */,
+				36A6AC3221B3CCA8006F46A9 /* sunroofControl65.png in Resources */,
+				36A6AC3A21B3CCA8006F46A9 /* sunroofControl55.png in Resources */,
+				36A6AC5F21B3CCA8006F46A9 /* sunroofControl37.png in Resources */,
 				36E855E021B3019800D6D75C /* Roboto-Bold.ttf in Resources */,
+				36A6AC0D21B3CCA8006F46A9 /* sunroofControl16.png in Resources */,
+				36A6AC1A21B3CCA8006F46A9 /* sunroofControl6.png in Resources */,
 				36E855E621B3019800D6D75C /* Roboto-MediumItalic.ttf in Resources */,
+				36A6AC5521B3CCA8006F46A9 /* sunroofControl87.png in Resources */,
+				36A6AC5221B3CCA8006F46A9 /* sunroofControl44.png in Resources */,
+				36A6AC0F21B3CCA8006F46A9 /* sunroofControl2.png in Resources */,
 				36E855B121B2536200D6D75C /* globe@1x.png in Resources */,
 				36E855DF21B3019800D6D75C /* Roboto-BlackItalic.ttf in Resources */,
+				36A6AC2E21B3CCA8006F46A9 /* sunroofControl99.png in Resources */,
+				36A6AC2721B3CCA8006F46A9 /* sunroofControl63.png in Resources */,
+				36A6AC5D21B3CCA8006F46A9 /* sunroofControl22.png in Resources */,
+				36A6AC4721B3CCA8006F46A9 /* sunroofControl94.png in Resources */,
 				36E8558121B24EE700D6D75C /* LaunchScreen.storyboard in Resources */,
+				36A6AC4321B3CCA8006F46A9 /* sunroofControl42.png in Resources */,
 				36A6A7AE21B34530006F46A9 /* submit.png in Resources */,
+				36A6AC2621B3CCA8006F46A9 /* sunroofControl77.png in Resources */,
 				36A6A7AC21B344D3006F46A9 /* table.png in Resources */,
 				36E855E221B3019800D6D75C /* Roboto-Italic.ttf in Resources */,
+				36A6AC1821B3CCA8006F46A9 /* sunroofControl38.png in Resources */,
+				36A6AC4E21B3CCA8006F46A9 /* sunroofControl85.png in Resources */,
+				36A6AC5E21B3CCA8006F46A9 /* sunroofControl36.png in Resources */,
 				36E855E821B3019800D6D75C /* Roboto-Thin.ttf in Resources */,
+				36A6AC6D21B3CCA8006F46A9 /* sunroofControl33.png in Resources */,
+				36A6AC5321B3CCA8006F46A9 /* sunroofControl50.png in Resources */,
+				36A6AC1D21B3CCA8006F46A9 /* sunroofControl13.png in Resources */,
+				36A6AC6E21B3CCA8006F46A9 /* sunroofControl32.png in Resources */,
+				36A6AC4821B3CCA8006F46A9 /* sunroofControl43.png in Resources */,
+				36A6AC0C21B3CCA8006F46A9 /* sunroofControl17.png in Resources */,
+				36A6AC3B21B3CCA8006F46A9 /* sunroofControl82.png in Resources */,
+				36A6AC5A21B3CCA8006F46A9 /* sunroofControl51.png in Resources */,
+				36A6AC1621B3CCA8006F46A9 /* sunroofControl11.png in Resources */,
+				36A6AC3D21B3CCA8006F46A9 /* sunroofControl97.png in Resources */,
+				36A6AC5C21B3CCA8006F46A9 /* sunroofControl8.png in Resources */,
+				36A6AC2B21B3CCA8006F46A9 /* sunroofControl76.png in Resources */,
+				36A6AC4A21B3CCA8006F46A9 /* sunroofControl53.png in Resources */,
+				36A6AC4F21B3CCA8006F46A9 /* sunroofControl91.png in Resources */,
+				36A6AC3521B3CCA8006F46A9 /* sunroofControl58.png in Resources */,
+				36A6AC6921B3CCA8006F46A9 /* sunroofControl19.png in Resources */,
+				36A6AC3621B3CCA8006F46A9 /* sunroofControl70.png in Resources */,
+				36A6AC1F21B3CCA8006F46A9 /* sunroofControl100.png in Resources */,
+				36A6AC1521B3CCA8006F46A9 /* sunroofControl7.png in Resources */,
+				36A6AC0B21B3CCA8006F46A9 /* sunroofControl1.png in Resources */,
+				36A6AC3721B3CCA8006F46A9 /* sunroofControl64.png in Resources */,
 				36E855AB21B252C400D6D75C /* sync.png in Resources */,
+				36A6AC1C21B3CCA8006F46A9 /* sunroofControl12.png in Resources */,
+				36A6AC2321B3CCA8006F46A9 /* sunroofControl75.png in Resources */,
+				36A6AC5821B3CCA8006F46A9 /* sunroofControl86.png in Resources */,
+				36A6AC2421B3CCA8006F46A9 /* sunroofControl61.png in Resources */,
+				36A6AC6021B3CCA8006F46A9 /* sunroofControl23.png in Resources */,
+				36A6AC2A21B3CCA8006F46A9 /* sunroofControl62.png in Resources */,
+				36A6AC1221B3CCA8006F46A9 /* sunroofControl15.png in Resources */,
 				36E855E321B3019800D6D75C /* Roboto-Light.ttf in Resources */,
+				36A6AC1B21B3CCA8006F46A9 /* sunroofControl4.png in Resources */,
 				36A6A7B421B34DFC006F46A9 /* error.png in Resources */,
+				36A6AC5921B3CCA8006F46A9 /* sunroofControl79.png in Resources */,
 				36A6A7C021B39802006F46A9 /* measure.png in Resources */,
+				36A6AC1921B3CCA8006F46A9 /* sunroofControl10.png in Resources */,
+				36A6AC4521B3CCA8006F46A9 /* sunroofControl81.png in Resources */,
+				36A6AC2821B3CCA8006F46A9 /* sunroofControl88.png in Resources */,
 				36E855E921B3019800D6D75C /* Roboto-ThinItalic.ttf in Resources */,
+				36A6AC1021B3CCA8006F46A9 /* sunroofControl28.png in Resources */,
 				36A6A7AA21B3445D006F46A9 /* door.png in Resources */,
+				36A6AC5721B3CCA8006F46A9 /* sunroofControl92.png in Resources */,
+				36A6AC6521B3CCA8006F46A9 /* sunroofControl34.png in Resources */,
+				36A6AC1121B3CCA8006F46A9 /* sunroofControl14.png in Resources */,
+				36A6AC3921B3CCA8006F46A9 /* sunroofControl41.png in Resources */,
+				36A6AC2121B3CCA8006F46A9 /* sunroofControl60.png in Resources */,
+				36A6AC2F21B3CCA8006F46A9 /* sunroofControl98.png in Resources */,
 				36E855B521B2539B00D6D75C /* input@1x.png in Resources */,
 				36A6A7BA21B36A76006F46A9 /* logo.png in Resources */,
 				36E855E721B3019800D6D75C /* Roboto-Regular.ttf in Resources */,
+				36A6AC4D21B3CCA8006F46A9 /* sunroofControl84.png in Resources */,
+				36A6AC4221B3CCA8006F46A9 /* sunroofControl56.png in Resources */,
 				36E8557E21B24EE700D6D75C /* Assets.xcassets in Resources */,
+				36A6AC2221B3CCA8006F46A9 /* sunroofControl74.png in Resources */,
 				36E855AC21B252C400D6D75C /* globe.png in Resources */,
+				36A6AC5121B3CCA8006F46A9 /* sunroofControl52.png in Resources */,
+				36A6AC5421B3CCA8006F46A9 /* sunroofControl78.png in Resources */,
+				36A6AC6421B3CCA8006F46A9 /* sunroofControl20.png in Resources */,
 				36A6A7BE21B37149006F46A9 /* leftArrow.png in Resources */,
+				36A6AC2D21B3CCA8006F46A9 /* sunroofControl66.png in Resources */,
 				36E855E121B3019800D6D75C /* Roboto-BoldItalic.ttf in Resources */,
 				36E855B821B2660300D6D75C /* location.png in Resources */,
+				36A6AC6821B3CCA8006F46A9 /* sunroofControl18.png in Resources */,
+				36A6AC6221B3CCA8006F46A9 /* sunroofControl35.png in Resources */,
+				36A6AC3C21B3CCA8006F46A9 /* sunroofControl96.png in Resources */,
+				36A6AC1321B3CCA8006F46A9 /* sunroofControl29.png in Resources */,
+				36A6AC3021B3CCA8006F46A9 /* sunroofControl67.png in Resources */,
+				36A6AC6F21B3CCA8006F46A9 /* sunroofControl26.png in Resources */,
 				36E855DE21B3019800D6D75C /* Roboto-Black.ttf in Resources */,
+				36A6AC4C21B3CCA8006F46A9 /* sunroofControl90.png in Resources */,
+				36A6AC3121B3CCA8006F46A9 /* sunroofControl73.png in Resources */,
+				36A6AC3F21B3CCA8006F46A9 /* sunroofControl54.png in Resources */,
+				36A6AC4621B3CCA8006F46A9 /* sunroofControl80.png in Resources */,
+				36A6AC6121B3CCA8006F46A9 /* sunroofControl9.png in Resources */,
 				36A6A7C221B3A057006F46A9 /* sound.png in Resources */,
+				36A6AC1E21B3CCA8006F46A9 /* sunroofControl5.png in Resources */,
+				36A6AC4021B3CCA8006F46A9 /* sunroofControl40.png in Resources */,
+				36A6AC5621B3CCA8006F46A9 /* sunroofControl93.png in Resources */,
+				36A6AC2021B3CCA8006F46A9 /* sunroofControl48.png in Resources */,
+				36A6AC3821B3CCA8006F46A9 /* sunroofControl69.png in Resources */,
 				36E855E421B3019800D6D75C /* Roboto-LightItalic.ttf in Resources */,
+				36A6AC2921B3CCA8006F46A9 /* sunroofControl89.png in Resources */,
+				36A6AC2521B3CCA8006F46A9 /* sunroofControl49.png in Resources */,
+				36A6AC2C21B3CCA8006F46A9 /* sunroofControl72.png in Resources */,
+				36A6AC1421B3CCA8006F46A9 /* sunroofControl3.png in Resources */,
+				36A6AC6321B3CCA8006F46A9 /* sunroofControl21.png in Resources */,
 				36E855B221B2536200D6D75C /* globe@2x.png in Resources */,
 				36E8557C21B24EE500D6D75C /* Main.storyboard in Resources */,
+				36A6AC6721B3CCA8006F46A9 /* sunroofControl24.png in Resources */,
+				36A6AC4121B3CCA8006F46A9 /* sunroofControl68.png in Resources */,
 				36A6A7B221B34C57006F46A9 /* ErrorMessage.png in Resources */,
+				36A6AC3E21B3CCA8006F46A9 /* sunroofControl83.png in Resources */,
+				36A6AC3321B3CCA8006F46A9 /* sunroofControl71.png in Resources */,
 				36E855AA21B252C400D6D75C /* profile.png in Resources */,
+				36A6AC3421B3CCA8006F46A9 /* sunroofControl59.png in Resources */,
+				36A6AC5B21B3CCA8006F46A9 /* sunroofControl45.png in Resources */,
+				36A6AC6A21B3CCA8006F46A9 /* sunroofControl25.png in Resources */,
+				36A6AC6C21B3CCA8006F46A9 /* sunroofControl27.png in Resources */,
+				36A6AC5021B3CCA8006F46A9 /* sunroofControl46.png in Resources */,
 				36E855EF21B311EC00D6D75C /* types.csv in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +1128,107 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A6AC7921B3CCAB006F46A9 /* sunroofControl3.png in Resources */,
+				36A6AC7A21B3CCAB006F46A9 /* sunroofControl7.png in Resources */,
+				36A6ACA921B3CCAB006F46A9 /* sunroofControl95.png in Resources */,
+				36A6AC7C21B3CCAB006F46A9 /* sunroofControl39.png in Resources */,
+				36A6ACC721B3CCAB006F46A9 /* sunroofControl35.png in Resources */,
+				36A6AC9621B3CCAB006F46A9 /* sunroofControl73.png in Resources */,
+				36A6ACC121B3CCAB006F46A9 /* sunroofControl8.png in Resources */,
+				36A6AC9021B3CCAB006F46A9 /* sunroofControl76.png in Resources */,
+				36A6AC8121B3CCAB006F46A9 /* sunroofControl12.png in Resources */,
+				36A6AC9E21B3CCAB006F46A9 /* sunroofControl41.png in Resources */,
+				36A6ACA621B3CCAB006F46A9 /* sunroofControl68.png in Resources */,
+				36A6AC7621B3CCAB006F46A9 /* sunroofControl14.png in Resources */,
+				36A6ACC921B3CCAB006F46A9 /* sunroofControl20.png in Resources */,
+				36A6ACA421B3CCAB006F46A9 /* sunroofControl54.png in Resources */,
+				36A6ACC821B3CCAB006F46A9 /* sunroofControl21.png in Resources */,
+				36A6ACC221B3CCAB006F46A9 /* sunroofControl22.png in Resources */,
+				36A6AC9821B3CCAB006F46A9 /* sunroofControl71.png in Resources */,
+				36A6ACCE21B3CCAB006F46A9 /* sunroofControl19.png in Resources */,
+				36A6ACB721B3CCAB006F46A9 /* sunroofControl44.png in Resources */,
+				36A6ACB521B3CCAB006F46A9 /* sunroofControl46.png in Resources */,
+				36A6ACAB21B3CCAB006F46A9 /* sunroofControl80.png in Resources */,
+				36A6ACB921B3CCAB006F46A9 /* sunroofControl78.png in Resources */,
+				36A6AC9721B3CCAB006F46A9 /* sunroofControl65.png in Resources */,
+				36A6AC7521B3CCAB006F46A9 /* sunroofControl28.png in Resources */,
+				36A6AC8B21B3CCAB006F46A9 /* sunroofControl77.png in Resources */,
+				36A6AC7721B3CCAB006F46A9 /* sunroofControl15.png in Resources */,
+				36A6AC9C21B3CCAB006F46A9 /* sunroofControl64.png in Resources */,
+				36A6ACCF21B3CCAB006F46A9 /* sunroofControl25.png in Resources */,
+				36A6AC8C21B3CCAB006F46A9 /* sunroofControl63.png in Resources */,
+				36A6ACBE21B3CCAB006F46A9 /* sunroofControl79.png in Resources */,
+				36A6ACD221B3CCAB006F46A9 /* sunroofControl33.png in Resources */,
+				36A6AC7821B3CCAB006F46A9 /* sunroofControl29.png in Resources */,
+				36A6AC8321B3CCAB006F46A9 /* sunroofControl5.png in Resources */,
+				36A6ACC421B3CCAB006F46A9 /* sunroofControl37.png in Resources */,
+				36A6ACB121B3CCAB006F46A9 /* sunroofControl90.png in Resources */,
+				36A6ACAA21B3CCAB006F46A9 /* sunroofControl81.png in Resources */,
+				36A6AC9B21B3CCAB006F46A9 /* sunroofControl70.png in Resources */,
+				36A6ACBA21B3CCAB006F46A9 /* sunroofControl87.png in Resources */,
+				36A6ACCB21B3CCAB006F46A9 /* sunroofControl30.png in Resources */,
+				36A6ACB421B3CCAB006F46A9 /* sunroofControl91.png in Resources */,
+				36A6AC9421B3CCAB006F46A9 /* sunroofControl98.png in Resources */,
+				36A6AC7D21B3CCAB006F46A9 /* sunroofControl38.png in Resources */,
+				36A6AC8D21B3CCAB006F46A9 /* sunroofControl88.png in Resources */,
+				36A6ACD421B3CCAB006F46A9 /* sunroofControl26.png in Resources */,
+				36A6AC8021B3CCAB006F46A9 /* sunroofControl4.png in Resources */,
+				36A6AC7B21B3CCAB006F46A9 /* sunroofControl11.png in Resources */,
+				36A6ACAF21B3CCAB006F46A9 /* sunroofControl53.png in Resources */,
+				36A6ACB621B3CCAB006F46A9 /* sunroofControl52.png in Resources */,
+				36A6ACBB21B3CCAB006F46A9 /* sunroofControl93.png in Resources */,
+				36A6AC9521B3CCAB006F46A9 /* sunroofControl67.png in Resources */,
+				36A6AC9D21B3CCAB006F46A9 /* sunroofControl69.png in Resources */,
+				36A6AC9A21B3CCAB006F46A9 /* sunroofControl58.png in Resources */,
+				36A6ACAC21B3CCAB006F46A9 /* sunroofControl94.png in Resources */,
+				36A6ACBF21B3CCAB006F46A9 /* sunroofControl51.png in Resources */,
+				36A6AC8821B3CCAB006F46A9 /* sunroofControl75.png in Resources */,
+				36A6ACD121B3CCAB006F46A9 /* sunroofControl27.png in Resources */,
+				36A6ACBD21B3CCAB006F46A9 /* sunroofControl86.png in Resources */,
+				36A6ACA321B3CCAB006F46A9 /* sunroofControl83.png in Resources */,
+				36A6ACC621B3CCAB006F46A9 /* sunroofControl9.png in Resources */,
+				36A6ACA221B3CCAB006F46A9 /* sunroofControl97.png in Resources */,
+				36A6ACA021B3CCAB006F46A9 /* sunroofControl82.png in Resources */,
+				36A6AC9221B3CCAB006F46A9 /* sunroofControl66.png in Resources */,
+				36A6AC8521B3CCAB006F46A9 /* sunroofControl48.png in Resources */,
+				36A6AC7F21B3CCAB006F46A9 /* sunroofControl6.png in Resources */,
+				36A6AC9F21B3CCAB006F46A9 /* sunroofControl55.png in Resources */,
+				36A6ACA821B3CCAB006F46A9 /* sunroofControl42.png in Resources */,
+				36A6ACB021B3CCAB006F46A9 /* sunroofControl47.png in Resources */,
+				36A6AC7221B3CCAB006F46A9 /* sunroofControl16.png in Resources */,
+				36A6AC8721B3CCAB006F46A9 /* sunroofControl74.png in Resources */,
+				36A6AC8621B3CCAB006F46A9 /* sunroofControl60.png in Resources */,
+				36A6ACA721B3CCAB006F46A9 /* sunroofControl56.png in Resources */,
+				36A6ACAD21B3CCAB006F46A9 /* sunroofControl43.png in Resources */,
+				36A6AC7421B3CCAB006F46A9 /* sunroofControl2.png in Resources */,
+				36A6AC7121B3CCAB006F46A9 /* sunroofControl17.png in Resources */,
+				36A6ACCA21B3CCAB006F46A9 /* sunroofControl34.png in Resources */,
+				36A6ACB821B3CCAB006F46A9 /* sunroofControl50.png in Resources */,
+				36A6ACA121B3CCAB006F46A9 /* sunroofControl96.png in Resources */,
+				36A6AC9921B3CCAB006F46A9 /* sunroofControl59.png in Resources */,
+				36A6ACD321B3CCAB006F46A9 /* sunroofControl32.png in Resources */,
+				36A6ACD021B3CCAB006F46A9 /* sunroofControl31.png in Resources */,
+				36A6ACBC21B3CCAB006F46A9 /* sunroofControl92.png in Resources */,
+				36A6AC8421B3CCAB006F46A9 /* sunroofControl100.png in Resources */,
+				36A6AC8A21B3CCAB006F46A9 /* sunroofControl49.png in Resources */,
+				36A6ACC321B3CCAB006F46A9 /* sunroofControl36.png in Resources */,
+				36A6AC8E21B3CCAB006F46A9 /* sunroofControl89.png in Resources */,
+				36A6AC9121B3CCAB006F46A9 /* sunroofControl72.png in Resources */,
+				36A6AC8921B3CCAB006F46A9 /* sunroofControl61.png in Resources */,
+				36A6ACB221B3CCAB006F46A9 /* sunroofControl84.png in Resources */,
+				36A6AC9321B3CCAB006F46A9 /* sunroofControl99.png in Resources */,
+				36A6ACA521B3CCAB006F46A9 /* sunroofControl40.png in Resources */,
+				36A6ACB321B3CCAB006F46A9 /* sunroofControl85.png in Resources */,
+				36A6ACAE21B3CCAB006F46A9 /* sunroofControl57.png in Resources */,
+				36A6ACC521B3CCAB006F46A9 /* sunroofControl23.png in Resources */,
+				36A6ACC021B3CCAB006F46A9 /* sunroofControl45.png in Resources */,
+				36A6AC7E21B3CCAB006F46A9 /* sunroofControl10.png in Resources */,
+				36A6AC8F21B3CCAB006F46A9 /* sunroofControl62.png in Resources */,
+				36A6ACCD21B3CCAB006F46A9 /* sunroofControl18.png in Resources */,
+				36A6AC7021B3CCAB006F46A9 /* sunroofControl1.png in Resources */,
+				36A6ACCC21B3CCAB006F46A9 /* sunroofControl24.png in Resources */,
+				36A6AC8221B3CCAB006F46A9 /* sunroofControl13.png in Resources */,
+				36A6AC7321B3CCAB006F46A9 /* sunroofControl0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +1236,107 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				36A6ACDE21B3CCAB006F46A9 /* sunroofControl3.png in Resources */,
+				36A6ACDF21B3CCAB006F46A9 /* sunroofControl7.png in Resources */,
+				36A6AD0E21B3CCAB006F46A9 /* sunroofControl95.png in Resources */,
+				36A6ACE121B3CCAB006F46A9 /* sunroofControl39.png in Resources */,
+				36A6AD2C21B3CCAB006F46A9 /* sunroofControl35.png in Resources */,
+				36A6ACFB21B3CCAB006F46A9 /* sunroofControl73.png in Resources */,
+				36A6AD2621B3CCAB006F46A9 /* sunroofControl8.png in Resources */,
+				36A6ACF521B3CCAB006F46A9 /* sunroofControl76.png in Resources */,
+				36A6ACE621B3CCAB006F46A9 /* sunroofControl12.png in Resources */,
+				36A6AD0321B3CCAB006F46A9 /* sunroofControl41.png in Resources */,
+				36A6AD0B21B3CCAB006F46A9 /* sunroofControl68.png in Resources */,
+				36A6ACDB21B3CCAB006F46A9 /* sunroofControl14.png in Resources */,
+				36A6AD2E21B3CCAB006F46A9 /* sunroofControl20.png in Resources */,
+				36A6AD0921B3CCAB006F46A9 /* sunroofControl54.png in Resources */,
+				36A6AD2D21B3CCAB006F46A9 /* sunroofControl21.png in Resources */,
+				36A6AD2721B3CCAB006F46A9 /* sunroofControl22.png in Resources */,
+				36A6ACFD21B3CCAB006F46A9 /* sunroofControl71.png in Resources */,
+				36A6AD3321B3CCAB006F46A9 /* sunroofControl19.png in Resources */,
+				36A6AD1C21B3CCAB006F46A9 /* sunroofControl44.png in Resources */,
+				36A6AD1A21B3CCAB006F46A9 /* sunroofControl46.png in Resources */,
+				36A6AD1021B3CCAB006F46A9 /* sunroofControl80.png in Resources */,
+				36A6AD1E21B3CCAB006F46A9 /* sunroofControl78.png in Resources */,
+				36A6ACFC21B3CCAB006F46A9 /* sunroofControl65.png in Resources */,
+				36A6ACDA21B3CCAB006F46A9 /* sunroofControl28.png in Resources */,
+				36A6ACF021B3CCAB006F46A9 /* sunroofControl77.png in Resources */,
+				36A6ACDC21B3CCAB006F46A9 /* sunroofControl15.png in Resources */,
+				36A6AD0121B3CCAB006F46A9 /* sunroofControl64.png in Resources */,
+				36A6AD3421B3CCAB006F46A9 /* sunroofControl25.png in Resources */,
+				36A6ACF121B3CCAB006F46A9 /* sunroofControl63.png in Resources */,
+				36A6AD2321B3CCAB006F46A9 /* sunroofControl79.png in Resources */,
+				36A6AD3721B3CCAB006F46A9 /* sunroofControl33.png in Resources */,
+				36A6ACDD21B3CCAB006F46A9 /* sunroofControl29.png in Resources */,
+				36A6ACE821B3CCAB006F46A9 /* sunroofControl5.png in Resources */,
+				36A6AD2921B3CCAB006F46A9 /* sunroofControl37.png in Resources */,
+				36A6AD1621B3CCAB006F46A9 /* sunroofControl90.png in Resources */,
+				36A6AD0F21B3CCAB006F46A9 /* sunroofControl81.png in Resources */,
+				36A6AD0021B3CCAB006F46A9 /* sunroofControl70.png in Resources */,
+				36A6AD1F21B3CCAB006F46A9 /* sunroofControl87.png in Resources */,
+				36A6AD3021B3CCAB006F46A9 /* sunroofControl30.png in Resources */,
+				36A6AD1921B3CCAB006F46A9 /* sunroofControl91.png in Resources */,
+				36A6ACF921B3CCAB006F46A9 /* sunroofControl98.png in Resources */,
+				36A6ACE221B3CCAB006F46A9 /* sunroofControl38.png in Resources */,
+				36A6ACF221B3CCAB006F46A9 /* sunroofControl88.png in Resources */,
+				36A6AD3921B3CCAB006F46A9 /* sunroofControl26.png in Resources */,
+				36A6ACE521B3CCAB006F46A9 /* sunroofControl4.png in Resources */,
+				36A6ACE021B3CCAB006F46A9 /* sunroofControl11.png in Resources */,
+				36A6AD1421B3CCAB006F46A9 /* sunroofControl53.png in Resources */,
+				36A6AD1B21B3CCAB006F46A9 /* sunroofControl52.png in Resources */,
+				36A6AD2021B3CCAB006F46A9 /* sunroofControl93.png in Resources */,
+				36A6ACFA21B3CCAB006F46A9 /* sunroofControl67.png in Resources */,
+				36A6AD0221B3CCAB006F46A9 /* sunroofControl69.png in Resources */,
+				36A6ACFF21B3CCAB006F46A9 /* sunroofControl58.png in Resources */,
+				36A6AD1121B3CCAB006F46A9 /* sunroofControl94.png in Resources */,
+				36A6AD2421B3CCAB006F46A9 /* sunroofControl51.png in Resources */,
+				36A6ACED21B3CCAB006F46A9 /* sunroofControl75.png in Resources */,
+				36A6AD3621B3CCAB006F46A9 /* sunroofControl27.png in Resources */,
+				36A6AD2221B3CCAB006F46A9 /* sunroofControl86.png in Resources */,
+				36A6AD0821B3CCAB006F46A9 /* sunroofControl83.png in Resources */,
+				36A6AD2B21B3CCAB006F46A9 /* sunroofControl9.png in Resources */,
+				36A6AD0721B3CCAB006F46A9 /* sunroofControl97.png in Resources */,
+				36A6AD0521B3CCAB006F46A9 /* sunroofControl82.png in Resources */,
+				36A6ACF721B3CCAB006F46A9 /* sunroofControl66.png in Resources */,
+				36A6ACEA21B3CCAB006F46A9 /* sunroofControl48.png in Resources */,
+				36A6ACE421B3CCAB006F46A9 /* sunroofControl6.png in Resources */,
+				36A6AD0421B3CCAB006F46A9 /* sunroofControl55.png in Resources */,
+				36A6AD0D21B3CCAB006F46A9 /* sunroofControl42.png in Resources */,
+				36A6AD1521B3CCAB006F46A9 /* sunroofControl47.png in Resources */,
+				36A6ACD721B3CCAB006F46A9 /* sunroofControl16.png in Resources */,
+				36A6ACEC21B3CCAB006F46A9 /* sunroofControl74.png in Resources */,
+				36A6ACEB21B3CCAB006F46A9 /* sunroofControl60.png in Resources */,
+				36A6AD0C21B3CCAB006F46A9 /* sunroofControl56.png in Resources */,
+				36A6AD1221B3CCAB006F46A9 /* sunroofControl43.png in Resources */,
+				36A6ACD921B3CCAB006F46A9 /* sunroofControl2.png in Resources */,
+				36A6ACD621B3CCAB006F46A9 /* sunroofControl17.png in Resources */,
+				36A6AD2F21B3CCAB006F46A9 /* sunroofControl34.png in Resources */,
+				36A6AD1D21B3CCAB006F46A9 /* sunroofControl50.png in Resources */,
+				36A6AD0621B3CCAB006F46A9 /* sunroofControl96.png in Resources */,
+				36A6ACFE21B3CCAB006F46A9 /* sunroofControl59.png in Resources */,
+				36A6AD3821B3CCAB006F46A9 /* sunroofControl32.png in Resources */,
+				36A6AD3521B3CCAB006F46A9 /* sunroofControl31.png in Resources */,
+				36A6AD2121B3CCAB006F46A9 /* sunroofControl92.png in Resources */,
+				36A6ACE921B3CCAB006F46A9 /* sunroofControl100.png in Resources */,
+				36A6ACEF21B3CCAB006F46A9 /* sunroofControl49.png in Resources */,
+				36A6AD2821B3CCAB006F46A9 /* sunroofControl36.png in Resources */,
+				36A6ACF321B3CCAB006F46A9 /* sunroofControl89.png in Resources */,
+				36A6ACF621B3CCAB006F46A9 /* sunroofControl72.png in Resources */,
+				36A6ACEE21B3CCAB006F46A9 /* sunroofControl61.png in Resources */,
+				36A6AD1721B3CCAB006F46A9 /* sunroofControl84.png in Resources */,
+				36A6ACF821B3CCAB006F46A9 /* sunroofControl99.png in Resources */,
+				36A6AD0A21B3CCAB006F46A9 /* sunroofControl40.png in Resources */,
+				36A6AD1821B3CCAB006F46A9 /* sunroofControl85.png in Resources */,
+				36A6AD1321B3CCAB006F46A9 /* sunroofControl57.png in Resources */,
+				36A6AD2A21B3CCAB006F46A9 /* sunroofControl23.png in Resources */,
+				36A6AD2521B3CCAB006F46A9 /* sunroofControl45.png in Resources */,
+				36A6ACE321B3CCAB006F46A9 /* sunroofControl10.png in Resources */,
+				36A6ACF421B3CCAB006F46A9 /* sunroofControl62.png in Resources */,
+				36A6AD3221B3CCAB006F46A9 /* sunroofControl18.png in Resources */,
+				36A6ACD521B3CCAB006F46A9 /* sunroofControl1.png in Resources */,
+				36A6AD3121B3CCAB006F46A9 /* sunroofControl24.png in Resources */,
+				36A6ACE721B3CCAB006F46A9 /* sunroofControl13.png in Resources */,
+				36A6ACD821B3CCAB006F46A9 /* sunroofControl0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +1430,7 @@
 				36A6A7B821B36978006F46A9 /* MeasurementsVC.swift in Sources */,
 				36E855ED21B307A400D6D75C /* NetworkManager.swift in Sources */,
 				36A6A7A521B32807006F46A9 /* ModernSearchBar.swift in Sources */,
+				36A6A7C621B3C293006F46A9 /* ViewReportVC.swift in Sources */,
 				36E8557921B24EE500D6D75C /* ReportVC.swift in Sources */,
 				36A6A7A421B32807006F46A9 /* ModernSearchBarModel.swift in Sources */,
 				36E8557521B24EE500D6D75C /* AppDelegate.swift in Sources */,
