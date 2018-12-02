@@ -59,6 +59,8 @@
 	<string>To determine location of safe spaces </string>
 	<key>NSCameraUsageDescription</key>
 	<string>To measure the length of doors and height of tables</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>To measure the sound levels and high frequency noises in your area.</string>
 	<key>UIAppFonts</key>
 	<array>
 		<string>Roboto-Medium.ttf</string>

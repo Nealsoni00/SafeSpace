@@ -62,7 +62,7 @@
                                     <action selector="setMyLocation:" destination="9pv-A4-QxB" eventType="touchUpInside" id="fKI-mC-hSU"/>
                                 </connections>
                             </button>
-                            <searchBar contentMode="redraw" placeholder="Search something really cool..." translatesAutoresizingMaskIntoConstraints="NO" id="tk4-b8-EVG" customClass="ModernSearchBar" customModule="ModernSearchBar" customModuleProvider="target">
+                            <searchBar hidden="YES" contentMode="redraw" placeholder="Search something really cool..." translatesAutoresizingMaskIntoConstraints="NO" id="tk4-b8-EVG" customClass="ModernSearchBar" customModule="ModernSearchBar" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="88" width="375" height="56"/>
                                 <color key="backgroundColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.70980392160000005" green="0.82352941180000006" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -293,7 +293,7 @@
             </objects>
             <point key="canvasLocation" x="2377" y="-284"/>
         </scene>
-        <!--Places View Controller-->
+        <!--Accessibility Report-->
         <scene sceneID="WXK-vR-eL5">
             <objects>
                 <tableViewController storyboardIdentifier="DefaultSportsVC" id="ZmX-ka-hfX" customClass="PlacesViewController" customModule="SafeSpace" customModuleProvider="target" sceneMemberID="viewController">
@@ -375,10 +375,10 @@
                             <outlet property="delegate" destination="ZmX-ka-hfX" id="5ji-a9-HhQ"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="fBN-wT-VS0">
-                        <barButtonItem key="rightBarButtonItem" title="Done" style="done" id="Exy-IS-NGI">
+                    <navigationItem key="navigationItem" title="Accessibility Report" id="sVY-GA-r9V">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="WMM-gH-D5P">
                             <connections>
-                                <action selector="dismiss:" destination="ZmX-ka-hfX" id="Tev-pz-Fxo"/>
+                                <action selector="dismiss:" destination="ZmX-ka-hfX" id="0c9-za-qnC"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -503,7 +503,7 @@
                     </cells>
                 </tableViewSection>
             </objects>
-            <point key="canvasLocation" x="2377" y="419"/>
+            <point key="canvasLocation" x="3294" y="-284"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5o9-0H-D1z">
@@ -519,7 +519,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yJG-6N-im6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3294" y="1187"/>
+            <point key="canvasLocation" x="4065" y="419"/>
         </scene>
         <!--MeasureVC-->
         <scene sceneID="nVD-J0-Mcg">
@@ -560,7 +560,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eMi-Nj-n4U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4199" y="1187"/>
+            <point key="canvasLocation" x="4969" y="419"/>
         </scene>
         <!--Accessibility Report-->
         <scene sceneID="Hw3-B7-Xzm">
@@ -635,9 +635,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="ZmX-ka-hfX" kind="popoverPresentation" identifier="selectLocation" popoverAnchorView="Rlr-2H-rHi" id="eVZ-hz-U81">
-                                                <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
-                                            </segue>
+                                            <segue destination="3Pe-iK-muR" kind="showDetail" identifier="selectLocation" id="OhL-XK-mIs"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -859,7 +857,7 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection headerTitle="Door Widths and Table Heights:" id="OdW-qc-oXc">
+                            <tableViewSection headerTitle="Measurements:" id="OdW-qc-oXc">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="47" id="2jc-65-Hf9">
                                         <rect key="frame" x="0.0" y="897.66666666666674" width="375" height="47"/>
@@ -926,12 +924,44 @@
                                             <segue destination="n3T-Yl-nBp" kind="showDetail" identifier="table" id="NvT-ap-vK3"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="47" id="1bc-7P-qtx">
+                                        <rect key="frame" x="0.0" y="991.66666666666674" width="375" height="47"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1bc-7P-qtx" id="TOS-hH-Bs8">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="46.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Measure Sound Levels" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-sh-xgo">
+                                                    <rect key="frame" x="51" y="14" width="164" height="19"/>
+                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sound.png" translatesAutoresizingMaskIntoConstraints="NO" id="zEi-hx-pC2">
+                                                    <rect key="frame" x="18" y="11" width="25" height="25"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="25" id="OnR-re-QR0"/>
+                                                        <constraint firstAttribute="height" constant="25" id="QFa-Uv-h49"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uF7-sh-xgo" firstAttribute="centerY" secondItem="TOS-hH-Bs8" secondAttribute="centerY" id="Ofa-CM-Zkh"/>
+                                                <constraint firstItem="zEi-hx-pC2" firstAttribute="centerY" secondItem="TOS-hH-Bs8" secondAttribute="centerY" id="lQy-18-W8h"/>
+                                                <constraint firstItem="uF7-sh-xgo" firstAttribute="leading" secondItem="zEi-hx-pC2" secondAttribute="trailing" constant="8" id="rAE-vV-0yC"/>
+                                                <constraint firstItem="zEi-hx-pC2" firstAttribute="leading" secondItem="TOS-hH-Bs8" secondAttribute="leadingMargin" constant="10" id="wuH-3Z-8SO"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Tdo-Xb-lK2" kind="showDetail" identifier="measureSound" id="eIL-RY-RXc"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="" id="UsT-rk-lQY">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="TDg-oU-K8O">
-                                        <rect key="frame" x="0.0" y="1027.6666666666667" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="1074.6666666666667" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="TDg-oU-K8O" id="Jcd-bg-md2">
                                             <rect key="frame" x="0.0" y="0.0" width="341" height="43.666666666666664"/>
@@ -1005,7 +1035,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="72.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-T0-VpK">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="measure.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ofv-T0-VpK">
                                             <rect key="frame" x="10" y="5" width="63" height="63"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="63" id="sGO-Nt-5F2"/>
@@ -1078,7 +1108,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PD9-9e-IyD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="1187"/>
+            <point key="canvasLocation" x="3294" y="419"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rkQ-pX-Sn6">
@@ -1094,7 +1124,62 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kr2-YY-A4M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1585" y="1187"/>
+            <point key="canvasLocation" x="2377" y="419"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZhF-HV-caO">
+            <objects>
+                <navigationController id="Tdo-Xb-lK2" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZaA-dL-gsu">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="bXD-uI-snX" kind="relationship" relationship="rootViewController" id="OI7-Jg-Z6d"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NgR-9t-1vI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2377" y="1187"/>
+        </scene>
+        <!--SoundVC-->
+        <scene sceneID="Dat-dZ-4Cu">
+            <objects>
+                <viewController id="bXD-uI-snX" customClass="SoundVC" customModule="SafeSpace" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EY1-yd-TY9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHM-dN-biK">
+                                <rect key="frame" x="16" y="139" width="280" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="aRa-Ix-chA"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="QGQ-SB-FbD">
+                        <barButtonItem key="leftBarButtonItem" style="done" systemItem="cancel" id="BsZ-qa-BB2">
+                            <connections>
+                                <action selector="cancelPressed:" destination="bXD-uI-snX" id="FFD-67-5G7"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="oA7-8Q-VIr">
+                            <connections>
+                                <action selector="addPressed:" destination="bXD-uI-snX" id="EKo-CT-AW5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="soundLabel" destination="MHM-dN-biK" id="Cgi-6W-lBa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2eO-KK-2vO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3293.5999999999999" y="1186.6995073891626"/>
         </scene>
     </scenes>
     <resources>
@@ -1106,11 +1191,13 @@
         <image name="leftArrow.png" width="100" height="100"/>
         <image name="location.png" width="50" height="50"/>
         <image name="lock.png" width="16" height="16"/>
+        <image name="measure.png" width="100" height="100"/>
+        <image name="sound.png" width="100" height="100"/>
         <image name="submit.png" width="100" height="100"/>
         <image name="table.png" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NvT-ap-vK3"/>
-        <segue reference="eVZ-hz-U81"/>
+        <segue reference="OhL-XK-mIs"/>
     </inferredMetricsTieBreakers>
 </document>

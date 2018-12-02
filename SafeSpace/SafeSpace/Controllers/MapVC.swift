@@ -12,12 +12,18 @@ import CoreLocation
 import MapKit
 import GooglePlaces
 import GoogleMaps
+import GooglePlacePicker
 
 class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var modernSearchBar: ModernSearchBar!
     @IBOutlet weak var mapView: MKMapView!
     var searchActive = false
     @IBOutlet weak var searchBar: UISearchBar!
+    
+    var resultsViewController: GMSAutocompleteResultsViewController?
+    var searchController: UISearchController?
+    var resultView: UITextView?
+    
     
     var locationManager = CLLocationManager()
     var trackingUserLocation = true
@@ -66,6 +72,23 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIS
 //        searchBar.enablesReturnKeyAutomatically = false
 //        searchBar.delegate = self
         self.configureSearchBar()
+        
+        resultsViewController = GMSAutocompleteResultsViewController()
+        resultsViewController?.delegate = self as! GMSAutocompleteResultsViewControllerDelegate
+        
+        searchController = UISearchController(searchResultsController: resultsViewController)
+        searchController?.searchResultsUpdater = resultsViewController
+        
+        // Put the search bar in the navigation bar.
+        searchController?.searchBar.sizeToFit()
+        navigationItem.titleView = searchController?.searchBar
+        
+        // When UISearchController presents the results view, present it in
+        // this view controller, not one further up the chain.
+        definesPresentationContext = true
+        
+        // Prevent the navigation bar from being hidden when searching.
+        searchController?.hidesNavigationBarDuringPresentation = false
         
         
         // Do any additional setup after loading the view, typically from a nib.
@@ -154,30 +177,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIS
             let region: MKCoordinateRegion = MKCoordinateRegion(center: userLocation.coordinate, span: span)
             
             self.mapView.setRegion(region, animated: false)
-//            listLikelyPlaces()
         }
-    }
-    
-    func listLikelyPlaces() {
-        // Clean up from previous sessions.
-        likelyPlaces.removeAll()
-        print("here")
-        placesClient.currentPlace(callback: { (placeLikelihoods, error) -> Void in
-            if let error = error {
-                // TODO: Handle the error.
-                print("Current Place error: \(error.localizedDescription)")
-                return
-            }
-            
-            // Get likely places and add to the list.
-            if let likelihoodList = placeLikelihoods {
-                for likelihood in likelihoodList.likelihoods {
-                    let place = likelihood.place
-                    self.likelyPlaces.append(place)
-                    print(place)
-                }
-            }
-        })
     }
     
     func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
@@ -185,9 +185,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIS
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "add" {
-            
             if let navController = segue.destination as? UINavigationController {
-                
                 if let childVC = navController.topViewController as? PlacesViewController {
                     childVC.likelyPlaces = likelyPlaces
                     
@@ -205,3 +203,30 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UIS
 
 
 
+// Handle the user's selection.
+extension MapVC: GMSAutocompleteResultsViewControllerDelegate {
+    func resultsController(_ resultsController: GMSAutocompleteResultsViewController,
+                           didAutocompleteWith place: GMSPlace) {
+        searchController?.isActive = false
+        // Do something with the selected place.
+        print("Place name: \(place.name)")
+        print("Place ID: \(place.placeID)")
+        print("Place Type: \(place.types[0])")
+        print("Place address: \(place.formattedAddress!)")
+    }
+    
+    func resultsController(_ resultsController: GMSAutocompleteResultsViewController,
+                           didFailAutocompleteWithError error: Error){
+        // TODO: handle the error.
+        print("Error: ", error.localizedDescription)
+    }
+    
+    // Turn the network activity indicator on and off again.
+    func didRequestAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = true
+    }
+    
+    func didUpdateAutocompletePredictions(_ viewController: GMSAutocompleteViewController) {
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+    }
+}

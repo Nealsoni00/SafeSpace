@@ -132,6 +132,7 @@ class PlacesViewController: UITableViewController {
     }
     @IBAction func dismiss(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -149,6 +150,7 @@ class PlacesViewController: UITableViewController {
         NetworkManager.sharedInstance.selectedPlaceTableHights = [Float]()
     
         print("selected \(likelyPlaces[indexPath!.row])")
+        self.dismiss(animated: true, completion: nil)
         self.dismiss(animated: true, completion: nil)
         
     }
