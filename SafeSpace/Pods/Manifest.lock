@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.7.3)
+  - DynamicBlurView (3.0.1)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
@@ -10,6 +11,8 @@ PODS:
     - GooglePlaces (= 2.7.0)
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - PopupDialog (0.9.1):
+    - DynamicBlurView (~> 3.0.1)
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
@@ -17,23 +20,28 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - PopupDialog
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - DynamicBlurView
     - GoogleMaps
     - GooglePlacePicker
     - GooglePlaces
+    - PopupDialog
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  DynamicBlurView: b1df5415f9bd31897549e5d7077e5ec120a4d636
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
   GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  PopupDialog: 03985b669c29802661c187513bf827340db1ae4d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 64135c02dfa01c4ad6761625871beb1ec2e6ea47
+PODFILE CHECKSUM: 20828bb6934c1a85aba020f0ac7e15f0196a5ec2
 
 COCOAPODS: 1.5.3

@@ -11,7 +11,7 @@ import GooglePlaces
 
 class ViewReportVC: UITableViewController {
     
-    @IBOutlet weak var progressImage: UIImage!
+    @IBOutlet weak var progressImage: UIImageView!
     
     @IBOutlet weak var informationCell: UITableViewCell!
     
@@ -26,7 +26,10 @@ class ViewReportVC: UITableViewController {
     
     @IBOutlet weak var loadingImage: UIActivityIndicatorView!
     var noData: Bool = false;
+    @IBOutlet var segmentedCollection: [UISegmentedControl]!
+    
     override func viewDidLoad() {
+        print(NetworkManager.sharedInstance.selectedPlaceInformation)
         super.viewDidLoad()
 //        informationCell.isHidden = true
 //        measurmentsCell.isHidden = true
@@ -36,7 +39,7 @@ class ViewReportVC: UITableViewController {
         
         self.loadingImage.startAnimating()
         self.loadingImage.isHidden = false
-        
+        self.populate()
         self.loadFirstPhotoForPlace(placeID: selectedPlace!.placeID)
         self.locationName.text = selectedPlace?.name
         self.locationAddress.text = selectedPlace!.formattedAddress
@@ -51,6 +54,62 @@ class ViewReportVC: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
+    }
+    var isSecondTime = false;
+    func populate(){
+        informationCell.isHidden = true
+        measurmentsCell.isHidden = true
+        measurmentsCell2.isHidden = true
+        measurmentsCell3.isHidden = true
+        progressImage.isHidden = true
+        noData = true;
+        let data = NetworkManager.sharedInstance.selectedPlaceInformation
+        if (isSecondTime){
+            informationCell.isHidden = true
+            measurmentsCell.isHidden = true
+            measurmentsCell2.isHidden = true
+            measurmentsCell3.isHidden = true
+            progressImage.isHidden = true
+            noData = true;
+            self.tableView.reloadData()
+        }
+        isSecondTime = true;
+        if data["gen_accessible"] == nil {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 5.0, execute: {
+                self.populate()
+            })
+        }else{
+            informationCell.isHidden = false
+            measurmentsCell.isHidden = false
+            measurmentsCell2.isHidden = false
+            measurmentsCell3.isHidden = false
+            progressImage.isHidden = false
+            noData = false;
+            self.segmentedCollection[0].selectedSegmentIndex = self.flip(val: data["gen_accessible"] as! Int)
+            self.segmentedCollection[1].selectedSegmentIndex = self.flip(val: (data["ramps"] as? Int == nil) ? 3 : data["ramps"] as! Int)
+            self.segmentedCollection[2].selectedSegmentIndex = self.flip(val: (data["elevators"] as? Int == nil) ? 3 : data["elevators"] as! Int)
+            self.segmentedCollection[3].selectedSegmentIndex = self.flip(val: (data["smooth"] as? Int == nil) ? 3 : data["smooth"] as! Int)
+            self.segmentedCollection[4].selectedSegmentIndex = self.flip(val: (data["parking"] as? Int == nil) ? 3 : data["parking"] as! Int)
+            self.segmentedCollection[5].selectedSegmentIndex =  self.flip(val: (data["bathrooms"] as? Int == nil) ? 3 : data["bathrooms"] as! Int)
+            self.segmentedCollection[6].selectedSegmentIndex = self.flip(val: (data["sight_impaired"] as? Int == nil) ? 3 : data["sight_impaired"] as! Int)
+            self.segmentedCollection[7].selectedSegmentIndex = self.flip(val: (data["sound"] as? Int == nil) ? 3 : data["sound"] as! Int)
+            var score = (data["score"]! as! NSNumber).intValue
+            print("score ", score);
+            print("score2 ", data["score"]!)
+            self.progressImage.image = UIImage(named: "sunroofControl\(score).png")
+        }
+        self.tableView.reloadData()
+        
+    }
+    
+    func flip(val: Int) -> Int{
+        if (val == 0){
+            return 1
+        }else if (val == 1){
+            return 0
+        }else{
+            return 0
+        }
     }
 
     // MARK: - Table view data source
@@ -76,7 +135,7 @@ class ViewReportVC: UITableViewController {
             sportsIcon.center.x = newView.center.x
             
             let messageLabel: UILabel = UILabel(frame: CGRect(x: 0, y: newView.center.y - 20, width: newView.frame.width - 20, height: 50))
-            messageLabel.text = "There is no accessibility information for \(selectedPlace?.name). Please consider contributing below:"
+            messageLabel.text = "There is no accessibility information for \(selectedPlace!.name). Please consider contributing below:"
             messageLabel.textColor = UIColor.black
             messageLabel.numberOfLines = 0
             messageLabel.textAlignment = .center
@@ -89,7 +148,7 @@ class ViewReportVC: UITableViewController {
             newClassButton.setTitle("Contribute", for: UIControl.State())
             newClassButton.titleLabel?.textAlignment = .center
             newClassButton.titleLabel?.font = UIFont(name: "Robot-Regular", size: 25)
-            newClassButton.addTarget(self, action: #selector(MeasurementsVC.addMeasurment), for: .touchUpInside)
+            newClassButton.addTarget(self, action: #selector(ViewReportVC.contribute), for: .touchUpInside)
             
             
             newView.addSubview(sportsIcon)
@@ -108,13 +167,12 @@ class ViewReportVC: UITableViewController {
         }
         return 2
     }
-    @objc func addMeasurment(){
-//        let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "addARMeasurment") as! UINavigationController
-//        if let childVC = vc1.topViewController as? MeasureVC {
-//            childVC.type = self.type!
-//
-//        }
-//        self.present(vc1, animated:true, completion: nil)
+    @objc func contribute(){
+        let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "form") as! UINavigationController
+        if let childVC = vc1.topViewController as? AccessibilityReportVC {
+            self.present(vc1, animated:true, completion: nil)
+        }
+        
     }
     func loadFirstPhotoForPlace(placeID: String) {
         GMSPlacesClient.shared().lookUpPhotos(forPlaceID: placeID) { (photos, error) -> Void in

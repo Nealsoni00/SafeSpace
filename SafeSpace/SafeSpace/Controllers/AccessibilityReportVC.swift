@@ -8,6 +8,7 @@
 
 import UIKit
 import GooglePlaces
+import PopupDialog
 
 class AccessibilityReportVC: UITableViewController {
 
@@ -46,7 +47,13 @@ class AccessibilityReportVC: UITableViewController {
         doorWidths = NetworkManager.sharedInstance.selectedPlaceDoorWidths
         tableHeights = NetworkManager.sharedInstance.selectedPlaceTableHights
         
-        
+        self.navigationController?.view.backgroundColor = UIColor.white
+        self.navigationController?.navigationBar.barTintColor = sweetBlue
+        self.navigationController?.navigationBar.isTranslucent = false
+        self.navigationController?.navigationBar.tintColor = UIColor.white
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
+        UIApplication.shared.statusBarStyle = .lightContent
+
         updateLabels()
 
     }
@@ -152,9 +159,61 @@ class AccessibilityReportVC: UITableViewController {
         
     }
     func submitform(){
-        print(accessabilityReports[0].selectedSegmentIndex == 0 ? "True" : "False")
+        print("here 1")
+        var addressComps = selectedPlace!.formattedAddress!.split(separator: ",")
+        let name = addressComps[0] ?? ""
+        let address = addressComps[1] ?? ""
+        let city = addressComps[2]
+        let state = (addressComps[3] ).split(separator: " ")[0]
+        let zip = ""
+        let locationParams = ["location_type_name":selectedPlace!.types, "name":name, "address":address, "city":city, "state":state,  "lat":selectedPlace!.coordinate.latitude, "long":selectedPlace!.coordinate.longitude, "google_place_id":selectedPlace!.placeID] as [String : Any]
+        NetworkManager.sharedInstance.addLocation(locationParams: locationParams) { json in
+            print("ADD LOCATION RESPONSE: \(json)")
+        }
+         print("here 2")
+        
+        let accessible = swapData(data: Int(accessabilityReports[0].selectedSegmentIndex))
+        let ramps = swapData(data: Int(accessabilityReports[1].selectedSegmentIndex))
+        let lifts = swapData(data: Int(accessabilityReports[2].selectedSegmentIndex))
+        let surfaces = swapData(data: Int(accessabilityReports[3].selectedSegmentIndex))
+        let parking = swapData(data: Int(accessabilityReports[4].selectedSegmentIndex))
+        let bathrooms = swapData(data: Int(accessabilityReports[5].selectedSegmentIndex))
+        let signs = swapData(data: Int(accessabilityReports[6].selectedSegmentIndex))
+        let loud = swapData(data: Int(accessabilityReports[7].selectedSegmentIndex))
+        print(accessible,ramps,lifts,surfaces,parking)
+        print("here 3")
+        print(selectedPlace!.placeID)
+        let informationParams = ["google_place_id":selectedPlace!.placeID,"gen_accessible":accessible, "ramps":ramps,"smooth":surfaces,"parking":parking,"bathrooms":bathrooms,"sight-impaired":signs,"elivators":lifts, "sound":loud,"door_widths":doorWidths,"table_heights":tableHeights!, "score":0.7777] as [String : Any]
+        
+        NetworkManager.sharedInstance.addInformation(informationParams: informationParams) { json in
+            print("ADD INFO RESPONSE: \(json)")
+        }
+        let popup = PopupDialog(title: "Thank you!", message: "We have successfully recorded your report! Thank you for helping Safe Space")
+        
+        popup.transitionStyle = .fadeIn
+        let buttonOne = DefaultButton(title: "Dismiss") {
+        }
+        
+        popup.addButton(buttonOne)
+        // to add a single button
+        popup.addButton(buttonOne)
+        // Present dialog
+        self.present(popup, animated: true, completion: nil)
+        
+         print("here 4")
+        
+//        print(accessabilityReports[0].selectedSegmentIndex == 0 ? "True" : "False")
         
     }
+    func swapData(data: Int) -> Bool{
+        print(data)
+        if (data == 1){
+            return false
+        }else{
+            return true
+        }
+    }
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "selectLocation" {
             if let nextViewController = segue.destination as? MapVC {

@@ -8,6 +8,7 @@ target 'SafeSpace' do
   pod 'GoogleMaps'
   pod 'GooglePlaces'
   pod 'GooglePlacePicker'
+  pod 'PopupDialog'
 #  pod 'ModernSearchBar'
   # Pods for SafeSpace
 

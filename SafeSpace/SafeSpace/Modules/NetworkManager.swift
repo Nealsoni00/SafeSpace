@@ -19,6 +19,7 @@ class NetworkManager: NSObject {
     var selectedPlace: GMSPlace?
     var selectedPlaceDoorWidths: [Float]?
     var selectedPlaceTableHights: [Float]?
+    var selectedPlaceInformation = [String: Any]()
     
     var placesClient: GMSPlacesClient!
     
@@ -28,7 +29,7 @@ class NetworkManager: NSObject {
     var basename: String
     
     private override init() {
-        self.basename = "http://localhost:3000/"
+        self.basename = "https://safe-spaces-224206.appspot.com/"
         super.init()
         
         self.placesClient = GMSPlacesClient.shared()
@@ -85,7 +86,7 @@ class NetworkManager: NSObject {
         }
     }
     
-    func getLocation(googlePlaceID: String, completion: (([String: Any]) -> Void)?) {
+    func getLocation(googlePlaceID: String, completion: ((JSON) -> Void)?) {
         let postParams = ["google_place_id": googlePlaceID]
         
         Alamofire.request(self.basename + "location/get",
@@ -100,7 +101,7 @@ class NetworkManager: NSObject {
                             // Get json data
                             let json = try JSON(data: data)
                             
-                            let returnVal = ["location": json[0]["location"], "information": json[0]["information"]]
+                            let returnVal = JSON(["location": json[0]["location"], "information": json[0]["information"]])
                             
                             completion?(returnVal)
                         } catch{

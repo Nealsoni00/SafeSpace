@@ -13,6 +13,7 @@ import MapKit
 import GooglePlaces
 import GoogleMaps
 import GooglePlacePicker
+import SwiftyJSON
 
 class MapVC: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate, UISearchBarDelegate {
     @IBOutlet weak var modernSearchBar: ModernSearchBar!
@@ -214,10 +215,70 @@ extension MapVC: GMSAutocompleteResultsViewControllerDelegate {
         print("Place Type: \(place.types[0])")
         print("Place address: \(place.formattedAddress!)")
         NetworkManager.sharedInstance.selectedPlace = place
-        
+        NetworkManager.sharedInstance.getLocation(googlePlaceID: place.placeID) { json in
+            
+            //print("LOCATION: \(json["location"]!)")
+            //NetworkManager.sharedInstance.selectedPlaceInformation = json["information"]! as! [String : Any]
+          
+            var data = [String: Any]()
+            
+            for (key, object) in json {
+                data[key] = object.stringValue
+            }
+            
+            var info = data["information"]! as! String
+            info.remove(at: info.startIndex)
+            info.remove(at: info.endIndex);
+            
+            var responses = info.split(separator: "}")
+            print("responses ", responses)
+            
+            let response = "\(responses[0])}"
+            print("response ", response)
+            let data2 = self.convertToDictionary(text: response)
+            NetworkManager.sharedInstance.selectedPlaceInformation = data2 ?? [String: Any]()
+            
+            print(data2)
+//            print("INFO DATA: \(data["information"]!)")
+            
+            /*if let info = json["information"] {
+                print("INFO: \(info)")
+                
+                if let infoArr = info as? [Any] {
+                    print("INFOARR: \(infoArr)")
+                } else {
+                    print("NO INFO ARR")
+                }
+            }*/
+            
+            //for obj in json["information"] {
+            //    print("OBJ: \(obj)")
+            //}
+            
+            /*if let information = json["information"].arrayValue {
+                print("INFORMATION: \(information)")
+                
+                if let infoDict = information[0] as? [String: Any] {
+                    print("INFO: \(infoDict["id"])")
+                }
+            } else {
+                print("INFO IS NULL")
+            }*/
+            
+        }
         let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "viewReport") as! UINavigationController
         self.present(vc1, animated:true, completion: nil)
         
+    }
+    func convertToDictionary(text: String) -> [String: Any]? {
+        if let data = text.data(using: .utf8) {
+            do {
+                return try JSONSerialization.jsonObject(with: data, options: []) as? [String: Any]
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+        return nil
     }
     
     func resultsController(_ resultsController: GMSAutocompleteResultsViewController,
