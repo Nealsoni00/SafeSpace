@@ -93,7 +93,7 @@ class MeasureVC: UIViewController, ARSCNViewDelegate {
             
             // Adds a second sphere to the array
             spheres.append(sphere)
-            measurementLabel.text = "\(sphere.distance(to: first)) inches"
+            measurementLabel.text = "\(sphere.distance(to: first).rounded()) inches"
             if (lineNode != nil){
                 lineNode!.removeFromParentNode();
             }

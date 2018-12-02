@@ -37,7 +37,7 @@ class MeasurementsVC: UITableViewController {
         self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: UIFont(name: "Roboto-Regular", size: 17)!, NSAttributedString.Key.foregroundColor: UIColor.white]
         UIApplication.shared.statusBarStyle = .lightContent
         
-        self.navigationItem.title = "Door Measurments"
+        self.navigationItem.title = "\(type!.capitalized) Measurments"
         
         //        print(self.defaultSports.count)
     }
@@ -246,7 +246,7 @@ class MeasurementsVC: UITableViewController {
         }else{
             self.measurements = NetworkManager.sharedInstance.selectedPlaceTableHights
         }
-//        print(self.measurements)
+        print("Measurments: \(self.measurements)")
         table.reloadData()
         
     }

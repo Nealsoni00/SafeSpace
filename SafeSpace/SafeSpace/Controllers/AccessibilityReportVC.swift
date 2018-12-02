@@ -15,6 +15,9 @@ class AccessibilityReportVC: UITableViewController {
     var doorWidths: [Float]?
     var tableHeights: [Float]?
     
+    @IBOutlet weak var tableHeightsLabel: UILabel!
+    @IBOutlet weak var doorWidthsLabel: UILabel!
+    
     @IBOutlet weak var locationImage: UIImageView!
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var locationAddress: UILabel!
@@ -40,8 +43,32 @@ class AccessibilityReportVC: UITableViewController {
         for segment in accessabilityReports{
             segment.selectedSegmentIndex = 0
         }
+        doorWidths = NetworkManager.sharedInstance.selectedPlaceDoorWidths
+        tableHeights = NetworkManager.sharedInstance.selectedPlaceTableHights
         
         
+        if (doorWidths?.count ?? 0 != 0){
+            print("there are \(doorWidths?.count) doors")
+            var sum: Float = 0.00
+            for door in doorWidths!{
+                sum += door
+            }
+            let average = sum/Float(doorWidths!.count)
+            doorWidthsLabel.text = "Average Door Width: \(average)"
+        }else{
+            doorWidthsLabel.text = "Measure Location's Door Widths"
+        }
+        if (tableHeights?.count ?? 0 != 0){
+            var sum: Float = 0.00
+            for door in tableHeights!{
+                sum += door
+            }
+            let average = sum/Float(tableHeights!.count)
+            
+            tableHeightsLabel.text = "Average Table Height: \(average)"
+        }else{
+            doorWidthsLabel.text = "Measure Location's Table Heights"
+        }
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -50,6 +77,7 @@ class AccessibilityReportVC: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     override func viewDidAppear(_ animated: Bool) {
+        
         if (NetworkManager.sharedInstance.selectedPlace == nil){
             NetworkManager.sharedInstance.selectedPlace = NetworkManager.sharedInstance.likelyPlaces[0];
            
@@ -62,7 +90,31 @@ class AccessibilityReportVC: UITableViewController {
         self.loadFirstPhotoForPlace(placeID: selectedPlace!.placeID)
         self.locationName.text = selectedPlace?.name
         self.locationAddress.text = selectedPlace!.formattedAddress
+        doorWidths = NetworkManager.sharedInstance.selectedPlaceDoorWidths
+        tableHeights = NetworkManager.sharedInstance.selectedPlaceTableHights
         
+        if (doorWidths?.count ?? 0 != 0){
+            print("there are \(doorWidths?.count) doors")
+            var sum: Float = 0.00
+            for door in doorWidths!{
+                sum += door
+            }
+            let average = sum/Float(doorWidths!.count)
+            doorWidthsLabel.text = "Average Door Width: \(average) in"
+        }else{
+            doorWidthsLabel.text = "Measure Location's Door Widths"
+        }
+        if (tableHeights?.count ?? 0 != 0){
+            var sum: Float = 0.00
+            for door in tableHeights!{
+                sum += door
+            }
+            let average = sum/Float(tableHeights!.count)
+            
+            tableHeightsLabel.text = "Average Table Height: \(average) in"
+        }else{
+            doorWidthsLabel.text = "Measure Location's Table Heights"
+        }
         print("appeared")
     }
     

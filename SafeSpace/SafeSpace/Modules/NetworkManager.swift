@@ -30,6 +30,8 @@ class NetworkManager: NSObject {
         self.placesClient = GMSPlacesClient.shared()
         self.getLikelyPlaces()
         self.getSearchData()
+        self.selectedPlaceDoorWidths = [Float]()
+        self.selectedPlaceTableHights = [Float]()
     }
     
     func getLikelyPlaces() {

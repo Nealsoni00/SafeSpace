@@ -651,7 +651,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="567.66666666666663"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this place generally Accessible?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1p-Me-AIt">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Is this place generally accessible?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f1p-Me-AIt">
                                                     <rect key="frame" x="26" y="11" width="323" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="h4i-KB-dSL"/>
@@ -670,7 +670,7 @@
                                                         <segment title="No"/>
                                                     </segments>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are their accessible ramps? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-VS-OqL">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are there accessiblity ramps? " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-VS-OqL">
                                                     <rect key="frame" x="26" y="79" width="323" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="24" id="L0l-W9-i7G"/>
@@ -690,7 +690,7 @@
                                                         <segment title="No"/>
                                                     </segments>
                                                 </segmentedControl>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are there elivators or lifts for staircases?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48u-TX-p1k">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are there elevators or lifts for staircases?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="48u-TX-p1k">
                                                     <rect key="frame" x="26" y="147" width="323" height="24"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="24" id="CRT-CD-UMF"/>
@@ -976,10 +976,12 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="doorWidthsLabel" destination="plz-Vi-uZL" id="IbW-P6-h5y"/>
                         <outlet property="loadingImage" destination="i4C-St-KNq" id="DOq-qY-XZ0"/>
                         <outlet property="locationAddress" destination="mYE-Z5-zXK" id="qVk-tW-FBp"/>
                         <outlet property="locationImage" destination="Wcq-L4-Acr" id="KaN-UN-TkW"/>
                         <outlet property="locationName" destination="jO5-h9-2Pp" id="MBt-WD-9f5"/>
+                        <outlet property="tableHeightsLabel" destination="bh3-wR-LX2" id="v5u-AC-gCX"/>
                         <outletCollection property="accessabilityReports" destination="LdO-P0-Z64" collectionClass="NSMutableArray" id="0SW-cV-Srp"/>
                     </connections>
                 </tableViewController>
