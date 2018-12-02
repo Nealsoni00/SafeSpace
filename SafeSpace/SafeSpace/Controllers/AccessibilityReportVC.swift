@@ -47,28 +47,7 @@ class AccessibilityReportVC: UITableViewController {
         tableHeights = NetworkManager.sharedInstance.selectedPlaceTableHights
         
         
-        if (doorWidths?.count ?? 0 != 0){
-            print("there are \(doorWidths?.count) doors")
-            var sum: Float = 0.00
-            for door in doorWidths!{
-                sum += door
-            }
-            let average = sum/Float(doorWidths!.count)
-            doorWidthsLabel.text = "Average Door Width: \(average)"
-        }else{
-            doorWidthsLabel.text = "Measure Location's Door Widths"
-        }
-        if (tableHeights?.count ?? 0 != 0){
-            var sum: Float = 0.00
-            for door in tableHeights!{
-                sum += door
-            }
-            let average = sum/Float(tableHeights!.count)
-            
-            tableHeightsLabel.text = "Average Table Height: \(average)"
-        }else{
-            doorWidthsLabel.text = "Measure Location's Table Heights"
-        }
+        updateLabels()
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -93,6 +72,10 @@ class AccessibilityReportVC: UITableViewController {
         doorWidths = NetworkManager.sharedInstance.selectedPlaceDoorWidths
         tableHeights = NetworkManager.sharedInstance.selectedPlaceTableHights
         
+        updateLabels()
+        print("appeared")
+    }
+    func updateLabels(){
         if (doorWidths?.count ?? 0 != 0){
             print("there are \(doorWidths?.count) doors")
             var sum: Float = 0.00
@@ -115,7 +98,6 @@ class AccessibilityReportVC: UITableViewController {
         }else{
             doorWidthsLabel.text = "Measure Location's Table Heights"
         }
-        print("appeared")
     }
     
     func loadFirstPhotoForPlace(placeID: String) {
