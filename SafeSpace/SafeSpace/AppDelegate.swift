@@ -25,7 +25,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         GMSServices.provideAPIKey("AIzaSyCJsjC1xVGvKCgEFABt6h9Acjy2JKkY-Fo")
         GMSPlacesClient.provideAPIKey("AIzaSyCJsjC1xVGvKCgEFABt6h9Acjy2JKkY-Fo")
-
+        
+        /*NetworkManager.sharedInstance.getLocation(googlePlaceID: "6") { json in
+            print("LOCATION: \(json["location"]!)")
+            print("INFO: \(json["information"]!)")
+        }*/
+        
+        /*let locationParams = ["location_type_name":"park", "name":"Gleiche's Lodge", "address":"6969 Pleasureville", "city":"New Haven", "state":"CT", "zip":"06880", "lat":6989.6969, "long":8969.969, "google_place_id":"888"] as [String : Any]
+        NetworkManager.sharedInstance.addLocation(locationParams: locationParams) { json in
+            print("ADD LOCATION RESPONSE: \(json)")
+        }*/
+        
+        /*let locationParams = ["location_type_name":"park", "name":"Gleiche's Lodge", "address":"6969 Pleasureville", "city":"New Haven", "state":"CT", "zip":"06880", "lat":6989.6969, "long":8969.969, "google_place_id":"888"] as [String : Any]
+        NetworkManager.sharedInstance.updateLocation(locationID: 60, locationParams: locationParams) { json in
+            print("UPDATE LOCATION RESPONSE: \(json)")
+        }*/
+        
+        /*let informationParams = ["google_place_id":5, "description":"DESCRIPTION", "ramps":true, "score":0.7777] as [String : Any]
+        NetworkManager.sharedInstance.addInformation(informationParams: informationParams) { json in
+            print("ADD INFO RESPONSE: \(json)")
+        }*/
+        
+        /*let informationParams = ["google_place_id":5, "description":"DESCRIPTION", "ramps":true, "score":0.7777] as [String : Any]
+        NetworkManager.sharedInstance.updateInformation(informationID: 2, informationParams: informationParams) { json in
+            print("UPDATE INFO RESPONSE: \(json)")
+        }*/
+        
         return true
     }
 
