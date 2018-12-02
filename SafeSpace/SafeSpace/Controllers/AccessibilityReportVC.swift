@@ -164,7 +164,8 @@ class AccessibilityReportVC: UITableViewController {
         let name = addressComps[0] ?? ""
         let address = addressComps[1] ?? ""
         let city = addressComps[2]
-        let state = (addressComps[3] ).split(separator: " ")[0]
+        let state = ""
+//        let state = (addressComps[3]).split(separator: " ")[0] ?? " "
         let zip = ""
         let locationParams = ["location_type_name":selectedPlace!.types, "name":name, "address":address, "city":city, "state":state,  "lat":selectedPlace!.coordinate.latitude, "long":selectedPlace!.coordinate.longitude, "google_place_id":selectedPlace!.placeID] as [String : Any]
         NetworkManager.sharedInstance.addLocation(locationParams: locationParams) { json in
@@ -243,6 +244,13 @@ class AccessibilityReportVC: UITableViewController {
             
         }
      
+    }
+    @IBAction func dismiss(_ sender: Any) {
+        let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") as! UITabBarController
+        ////        if let childVC = vc1.topViewController as? AccessibilityReportVC {
+        //            self.present(vc1, animated:true, completion: nil)
+        ////        }
+        self.present(vc1, animated: true, completion: nil)
     }
     
 

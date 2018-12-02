@@ -93,7 +93,7 @@ class ViewReportVC: UITableViewController {
             self.segmentedCollection[5].selectedSegmentIndex =  self.flip(val: (data["bathrooms"] as? Int == nil) ? 3 : data["bathrooms"] as! Int)
             self.segmentedCollection[6].selectedSegmentIndex = self.flip(val: (data["sight_impaired"] as? Int == nil) ? 3 : data["sight_impaired"] as! Int)
             self.segmentedCollection[7].selectedSegmentIndex = self.flip(val: (data["sound"] as? Int == nil) ? 3 : data["sound"] as! Int)
-            var score = (data["score"]! as! NSNumber).intValue
+            let score = Int(Float((data["score"]! as! NSNumber)) * 100)
             print("score ", score);
             print("score2 ", data["score"]!)
             self.progressImage.image = UIImage(named: "sunroofControl\(score).png")
@@ -259,6 +259,11 @@ class ViewReportVC: UITableViewController {
     
     @IBAction func cancelPressed(_ sender: AnyObject) {
         self.dismiss(animated: true, completion: nil)
+//        let vc1 = self.storyboard?.instantiateViewController(withIdentifier: "mainVC") as! UITabBarController
+////        if let childVC = vc1.topViewController as? AccessibilityReportVC {
+//            self.present(vc1, animated:true, completion: nil)
+////        }
+        
     }
     @IBAction func addPressed(_ sender: AnyObject) {
         

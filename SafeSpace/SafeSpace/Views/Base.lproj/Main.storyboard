@@ -999,9 +999,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Accessibility Report" id="oFW-B0-fGk">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="l6L-nk-2vU">
+                        <barButtonItem key="leftBarButtonItem" title="Exit" id="l6L-nk-2vU">
                             <connections>
-                                <action selector="donePressed:" destination="t40-WO-3dj" id="E4C-tw-0Zh"/>
+                                <segue destination="49e-Tb-3d3" kind="showDetail" id="ilj-h5-mO3"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1623,7 +1623,7 @@
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="3xw-gQ-gBt">
                             <connections>
-                                <segue destination="h6k-EM-rC7" kind="showDetail" id="kCZ-0N-IxU"/>
+                                <segue destination="h6k-EM-rC7" kind="showDetail" identifier="formSegue" id="kCZ-0N-IxU"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1645,7 +1645,6 @@
                         <outletCollection property="segmentedCollection" destination="rC8-2X-y2T" collectionClass="NSMutableArray" id="xlT-U9-Zil"/>
                         <outletCollection property="segmentedCollection" destination="1yi-xj-5UM" collectionClass="NSMutableArray" id="xKg-O6-j74"/>
                         <outletCollection property="segmentedCollection" destination="iNO-XR-zdE" collectionClass="NSMutableArray" id="QtD-hS-DrA"/>
-                        <segue destination="t40-WO-3dj" kind="show" identifier="edit" id="1OP-qf-g6h"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="97K-xz-hvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1670,7 +1669,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="NvT-ap-vK3"/>
-        <segue reference="Y5S-7w-cXf"/>
         <segue reference="OhL-XK-mIs"/>
         <segue reference="kCZ-0N-IxU"/>
     </inferredMetricsTieBreakers>
