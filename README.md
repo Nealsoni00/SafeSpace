@@ -18,6 +18,7 @@ The google App Engine and Cloud SQL server code can be found at: https://github.
 
 
 The Database main table is as follow:
+
 ##Disabilities Database:
 - Motion Impairment
 - Wheelchair Bound
